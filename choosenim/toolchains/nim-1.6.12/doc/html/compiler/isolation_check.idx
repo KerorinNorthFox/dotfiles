@@ -1,2 +1,0 @@
-canAlias	isolation_check.html#canAlias,PType,PType	isolation_check: canAlias(arg, ret: PType): bool	
-checkIsolate	isolation_check.html#checkIsolate,PNode	isolation_check: checkIsolate(n: PNode): bool	
