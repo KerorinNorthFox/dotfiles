@@ -1,0 +1,4 @@
+[submodule "lzma-sys/xz-5.2"]
+	path = lzma-sys/xz-5.2
+	url = https://git.tukaani.org/xz.git
+	branch = v5.2

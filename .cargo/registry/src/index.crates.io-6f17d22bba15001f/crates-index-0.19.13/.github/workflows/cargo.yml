@@ -1,0 +1,33 @@
+name: CI
+
+env:
+  CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    name: Test
+    strategy:
+      matrix:
+        rust:
+          - beta
+          - nightly
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: ${{ matrix.rust }}
+          override: true
+      - uses: actions-rs/cargo@v1
+        with:
+          command: test
+          args: --features=sparse-http,ssh
+      - uses: actions-rs/cargo@v1
+        with:
+          command: check
+          args: --all-targets --no-default-features

@@ -1,0 +1,6 @@
+    Updating '[ROOTURL]/registry' index
+Error: `cargo metadata` exited with an error: error: failed to parse manifest at `[ROOT]/case/Cargo.toml`
+
+Caused by:
+  could not parse input as TOML
+...

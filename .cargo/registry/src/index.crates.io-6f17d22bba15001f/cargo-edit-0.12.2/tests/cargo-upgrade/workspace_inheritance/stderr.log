@@ -1,0 +1,9 @@
+    Updating '[ROOTURL]/registry' index
+    Checking virtual workspace's dependencies
+    Checking four's dependencies
+    Checking one's dependencies
+    Checking three's dependencies
+    Checking two's dependencies
+   Upgrading recursive dependencies
+note: Re-run with `--verbose` to show more dependencies
+  local: three
