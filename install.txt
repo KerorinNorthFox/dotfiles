@@ -1,0 +1,34 @@
+# パッケージのアップデート＆アップグレード
+sudo apt update && sudo apt upgrade -y
+
+# fish shellの環境構築
+sudo apt install fish # fish shellインストール
+chsh -s /usr/bin/fish # シェルの変更
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher # fisherのインストール
+# fisherのプラグインインストール
+fisher install jethrokuan/z
+fisher install 0rax/fish-bd
+fisher install jethrokuan/fzf
+fisher install fabioantunes/fish-nvm
+fisher install edc/bass
+fisher install yuys13/fish-autols
+fisher install oh-my-fish/theme-bobthefish
+fisher install oh-my-fish/plugin-peco
+
+# Nodejs(nvm)の環境構築
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash # nvmインストール
+fisher install jorgebucaran/fish-nvm # nvmのfish用環境を構築してくれるプラグインをインストール
+
+# Nim(choosenim)の環境構築
+curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+
+# Rust(Cargo)の環境構築
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+printf "set PATH $HOME/.cargo/bin $PATH\nset -gx CARGO_TARGET_DIR $HOME/.cargo/target" | tee -a .config/fish/config.fish # cargoのパスを通す設定をconfig.fishに追記(dotfilesに設定があるので不要)
+
+
+
+
+
+# 最後にdotfilesの設定ファイルのシンボリックリンクを張る
+ln -s dotfiles/hoge ./hoge
