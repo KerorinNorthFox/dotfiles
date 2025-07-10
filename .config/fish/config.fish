@@ -47,14 +47,16 @@ abbr py "python3.10"
 abbr nimcr "nim c -r"
 abbr coding "cd /mnt/c/Users/masat/Desktop/program"
 
-alias ls="eza"
-alias la="eza -la"
+alias ls "eza"
+alias la "eza -la"
 
-alias g='git'
-alias gst='git status'
-alias gb='git branch'
-alias gs='git switch'
-alias gl='git log'
+alias g 'git'
+alias gst 'git status'
+alias gb 'git branch'
+alias gs 'git switch'
+alias gl 'git log'
+
+alias zlj 'zellij'
 
 function multicd
   echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
