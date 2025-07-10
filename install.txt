@@ -1,34 +1,48 @@
+## 注意：設定についてはdotfilesを参照
+## 　　　ここにはユーザーの行う操作だけを記述
+
 # パッケージのアップデート＆アップグレード
 sudo apt update && sudo apt upgrade -y
 
+===== 環境のセットアップ ======
 # fish shellの環境構築
-sudo apt install fish # fish shellインストール
+sudo apt install fish 
 chsh -s /usr/bin/fish # シェルの変更
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher # fisherのインストール
-# fisherのプラグインインストール
-fisher install jethrokuan/z
-fisher install 0rax/fish-bd
-fisher install jethrokuan/fzf
-fisher install fabioantunes/fish-nvm
-fisher install edc/bass
-fisher install yuys13/fish-autols
-fisher install oh-my-fish/theme-bobthefish
-fisher install oh-my-fish/plugin-peco
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher 
+
+# Rust(Cargo)の環境構築
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh # ~/.cargo/binをconfig.fishに追記する
 
 # Nodejs(nvm)の環境構築
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash # nvmインストール
-fisher install jorgebucaran/fish-nvm # nvmのfish用環境を構築してくれるプラグインをインストール
+fisher install fabioantunes/fish-nvm # nvmのfish用環境を構築してくれるプラグインをインストール
+fisher install edc/bass
 
 # Nim(choosenim)の環境構築
-curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+curl https://nim-lang.org/choosenim/init.sh -sSf | sh # nim版pyenv的なchoosenim
 
-# Rust(Cargo)の環境構築
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-printf "set PATH $HOME/.cargo/bin $PATH\nset -gx CARGO_TARGET_DIR $HOME/.cargo/target" | tee -a .config/fish/config.fish # cargoのパスを通す設定をconfig.fishに追記(dotfilesに設定があるので不要)
+===== パッケージ関係のインストール ======
+cargo install --locked zellij # ターミナルエミュ
+cargo install eza # ls代替
 
+fisher install oh-my-fish/theme-bobthefish # fishのテーマ、設定はconfig.fishに既に記述してあるはず
+fisher install oh-my-fish/plugin-peco
+fisher install jethrokuan/z
+fisher install 0rax/fish-bd
+fisher install jethrokuan/fzf
+fisher install yuys13/fish-autols # cdしたときに自動でls
+
+npm install -g @authropic-ai/claude-code # AIコーディングエージェント
+
+# ripgrep(grep代替)インストール
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep_14.1.1-1_amd64.deb
+sudo dpkg -i ripgrep_14.1.1-1_amd64.deb
+
+sudo apt install lazygit # TUI版git 
 
 
 
 
 # 最後にdotfilesの設定ファイルのシンボリックリンクを張る
 ln -s dotfiles/hoge ./hoge
+
