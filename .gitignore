@@ -22,5 +22,7 @@
 !/.config/moe/**
 !/.config/nvim/
 !/.config/nvim/**
+!/.config/zellij/
+!/.config/zellij/**
 !/.rustup/
 !/.rustup/**
