@@ -59,7 +59,7 @@ alias gb 'git branch'
 alias gs 'git switch'
 alias gl 'git log'
 
-alias zlj 'zellij'
+alias zj 'zellij'
 
 alias rgrep 'rg'
 
