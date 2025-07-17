@@ -22,6 +22,8 @@
 !/.config/moe/**
 !/.config/nvim/
 !/.config/nvim/**
+!/.config/nvim_old_setting/
+!/.config/nvim_old_setting/**
 !/.config/zellij/
 !/.config/zellij/**
 !/.rustup/
