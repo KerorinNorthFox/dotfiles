@@ -10,4 +10,5 @@ return {
   { import = "astrocommunity.bars-and-lines.lualine-nvim" },
   { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
   { import = "astrocommunity.bars-and-lines.statuscol-nvim" },
+  { import = "astrocommunity.bars-and-lines.vim-illuminate" },
 }
