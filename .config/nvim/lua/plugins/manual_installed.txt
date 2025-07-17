@@ -1,2 +1,5 @@
 lualine.lua : 下部ステータスバーを追加するプラグイン :  2025-07-16
 tokyonight.lua : tokyonightテーマ :  2025-07-16
+nightfox.lua : nightfoxテーマ : 2025-07-17
+dropbar.lua : パンくずリスト : 2025-07-17
+statuscol(in ../community.lua) : 左のstatuscolumnを表示 : 2025-07-17
