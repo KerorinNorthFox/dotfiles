@@ -3,3 +3,5 @@ tokyonight.lua : tokyonightテーマ :  2025-07-16
 nightfox.lua : nightfoxテーマ : 2025-07-17
 dropbar.lua : パンくずリスト : 2025-07-17
 statuscol(in ../community.lua) : 左のstatuscolumnを表示 : 2025-07-17
+vim-illuminate(in ../communit.lua) : 同じキーワードをハイライトする : 2025-07-17
+hlchunk.lua : チャンクハイライトなど : 2025-07-17
