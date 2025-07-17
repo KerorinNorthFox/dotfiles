@@ -16,7 +16,7 @@ return {
         "stylua",
 
         -- install debuggers
-        "debugpy",
+        -- "debugpy", -- disable debugpy intallation due to unsolved install failed error.
 
         -- install any other package
         "tree-sitter-cli",
