@@ -6,6 +6,7 @@ return {
   dependencies = {
     "nvim-telescope/telescope-fzf-native.nvim",
     build = "make",
+    lazy = true,
   },
   config = function()
     local dropbar_api = require "dropbar.api"
