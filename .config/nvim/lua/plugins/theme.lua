@@ -5,7 +5,5 @@ return {
     priority = 1000,
   },
 
-  {
-    "EdenEast/nightfox.nvim",
-  },
+  -- { "EdenEast/nightfox.nvim", } on community.lua
 }

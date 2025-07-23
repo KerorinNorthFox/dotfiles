@@ -11,4 +11,6 @@ return {
   { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
   { import = "astrocommunity.bars-and-lines.statuscol-nvim" },
   { import = "astrocommunity.bars-and-lines.vim-illuminate" },
+  { import = "astrocommunity.colorscheme.nightfox-nvim" },
+  { import = "astrocommunity.fuzzy-finder.telescope-nvim" },
 }
