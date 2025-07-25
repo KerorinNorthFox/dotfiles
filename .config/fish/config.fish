@@ -22,6 +22,13 @@ end
 
 
 function fish_greeting
+  echo "Do you execute package upgrade (with autoremove)? (y/n):"
+  read is_update
+  if test "$is_update" = "y"
+    sudo apt update && sudo apt upgrade -y
+    sudo apt autoremove -y
+  end
+
   echo ""
   echo "Hello "$USER"! Welcome to "(set_color cyan)"Fish Shell"(set_color normal)"! "
   echo "Version: "$version
@@ -42,6 +49,15 @@ function fish_greeting
     - apt list -u : Display upgradable package.
     - dpkg -l     : Display packages.
     - fisher      : Fish plugins manager.
+" (set_color magenta) (set_color normal)
+  printf "  %sFish KeyBindings%s:
+    - Ct+ Arrow       : Forward(Backward) word. 
+    - Ct+Sh+ Arrow    : Forward(Backward) Big word.
+    - Ct+ a           : Jump to beginning of line.
+    - Ct+ e           : Jump to end of line.
+    - Ct+ l           : Clear.
+    - Ct+ c           : Clear commandline.
+    - Alt+ v, Alt+ e  : Edit commandline buffer.
 " (set_color magenta) (set_color normal)
 
 end
@@ -75,3 +91,4 @@ abbr --add dotdot --regex '^\.\.+$' --function multicd
 ### Global variables
 set -gx CARGO_TARGET_DIR "$HOME/.cargo/target"
 set -U FZF_LEGACY_KEYBINDINGS 0
+set -gx EDITOR "vi"
