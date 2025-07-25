@@ -69,17 +69,8 @@ abbr coding "cd /mnt/c/Users/masat/Desktop/program"
 
 alias ls "eza"
 alias la "eza -la"
-
-alias g 'git'
-alias gst 'git status'
-alias gb 'git branch'
-alias gs 'git switch'
-alias gl 'git log'
-
-alias zj 'zellij'
-
-alias rgrep 'rg'
-
+alias zlj 'zellij'
+alias grep 'rg'
 alias lzg 'lazygit'
 
 function multicd
