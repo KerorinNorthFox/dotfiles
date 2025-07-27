@@ -11,7 +11,7 @@ chsh -s /usr/bin/fish # シェルの変更
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher 
 
 # Rust(Cargo)の環境構築
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh # ~/.cargo/binをconfig.fishに追記する
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh # ~/.cargo/binをconfig.fishに
 
 # Nodejs(nvm)の環境構築
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash # nvmインストール
@@ -21,7 +21,26 @@ fisher install edc/bass
 # Nim(choosenim)の環境構築
 curl https://nim-lang.org/choosenim/init.sh -sSf | sh # nim版pyenv的なchoosenim
 
+# Pythonの環境構築
+# TODO:
+
+# neovim最新版インストール, パスはconfig.nvmのfish用環境を構築してくれるプラグインをインストール
+curl -LO https://github.com/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo tar -C /opt -xzf nvim-linux-x86_64.gz
+
 ===== パッケージ関係のインストール ======
+# bottomインストール
+curl -LO https://github.com/ClementTsang/bottom/releases/download/0.10.2/bottom_0.10.2-1_amd64.deb
+sudo dpkg -i bottom_0.10.2-1_amd64.deb
+
+# ripgrep(grep代替)インストール
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep_14.1.1-1_amd64.deb
+sudo dpkg -i ripgrep_14.1.1-1_amd64.deb
+
+sudo apt install git
+sudo apt install lazygit # TUI版git 
+sudo apt install fzf
+
 cargo install --locked zellij # ターミナルエミュ
 cargo install eza # ls代替
 
@@ -34,11 +53,6 @@ fisher install yuys13/fish-autols # cdしたときに自動でls
 
 npm install -g @authropic-ai/claude-code # AIコーディングエージェント
 
-# ripgrep(grep代替)インストール
-curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep_14.1.1-1_amd64.deb
-sudo dpkg -i ripgrep_14.1.1-1_amd64.deb
-
-sudo apt install lazygit # TUI版git 
 
 
 
