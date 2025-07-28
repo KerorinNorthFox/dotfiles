@@ -1,25 +1,77 @@
 -- You can also add or configure plugins by creating files in this `plugins/` folder
--- PLEASE REMOVE THE EXAMPLES YOU HAVE NO INTEREST IN BEFORE ENABLING THIS FILE
--- Here are some examples:
 
 ---@type LazySpec
 return {
-
-  -- == Examples of Adding Plugins ==
-
-  "andweeb/presence.nvim",
   {
-    "ray-x/lsp_signature.nvim",
-    event = "BufRead",
-    config = function() require("lsp_signature").setup() end,
+    "shellRaining/hlchunk.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    opts = {
+      chunk = {
+        enable = true,
+      },
+      indent = {
+        enable = true,
+      },
+      line_num = {
+        enable = true,
+      },
+    },
   },
 
-  -- == Examples of Overriding Plugins ==
+  {
+    "sphamba/smear-cursor.nvim",
+    opts = {
+      stiffness = 0.8,
+      trailing_stiffness = 0.5,
+      distance_stop_animating = 0.5,
+      smear_between_buffers = true, -- Be smooth cursor when switching buffers.
+      -- scroll_buffer_space = true,
+    },
+  },
 
-  -- customize dashboard options
+  {
+    "nvim-lualine/lualine.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons", lazy = true },
+    opts = {
+      component_separators = { left = "<", right = "<" },
+      section_separators = { left = "", right = "" },
+    },
+  },
+
+  {
+    "Bekaboo/dropbar.nvim",
+    -- optional, but required for fuzzy finder support
+    dependencies = {
+      "nvim-telescope/telescope-fzf-native.nvim",
+      build = "make",
+      lazy = true,
+    },
+    config = function()
+      local dropbar_api = require "dropbar.api"
+      vim.keymap.set("n", "<Leader>;", dropbar_api.pick, { desc = "Pick symbols in winbar" })
+      vim.keymap.set("n", "[;", dropbar_api.goto_context_start, { desc = "Go to start of current context" })
+      vim.keymap.set("n", "];", dropbar_api.select_next_context, { desc = "Select next context" })
+    end,
+  },
+
+  {
+    "andweeb/presence.nvim",
+    lazy = false,
+    opts = {},
+  },
+
+  {
+    "ray-x/lsp_signature.nvim",
+    event = "InsertEnter",
+    opts = {},
+  },
+
   {
     "folke/snacks.nvim",
     opts = {
+      indent = {
+        enabled = false,
+      },
       dashboard = {
         preset = {
           header = table.concat({
@@ -40,10 +92,8 @@ return {
     },
   },
 
-  -- You can disable default plugins as follows:
-  { "max397574/better-escape.nvim", enabled = false },
+  { "max397574/better-escape.nvim" },
 
-  -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
   {
     "L3MON4D3/LuaSnip",
     config = function(plugin, opts)
