@@ -1,7 +1,7 @@
 -- uiに関するプラグインと設定
 
 return {
-  -- neovimのコマンドラインを画面中央にフロートして表示
+  -- neovimのコマンドラインを画面中央にフロートして表示 (on community.lua)
   {
     "folke/noice.nvim",
     event = "VeryLazy",

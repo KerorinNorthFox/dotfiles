@@ -7,20 +7,6 @@ return {
         marksman = {},
       },
     },
-    config = function()
-      local lspconfig = require "lspconfig"
-      local capabilities = require("blink.cmp").get_lsp_capabilities {
-        textDocument = {
-          completion = {
-            snippetSupport = true,
-          },
-        },
-        foldingRange = {
-          dynamicRegistration = false,
-          lineFoldingOnly = true,
-        },
-      }
-    end,
   },
 
   -- コマンド等補完

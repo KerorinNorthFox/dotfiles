@@ -30,4 +30,7 @@ return {
   { import = "astrocommunity.bars-and-lines.vim-illuminate" },
   { import = "astrocommunity.colorscheme.nightfox-nvim" },
   { import = "astrocommunity.fuzzy-finder.telescope-nvim" },
+  { import = "astrocommunity.utility.noice-nvim" },
+  { import = "astrocommunity.editing-support.treesj" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
 }

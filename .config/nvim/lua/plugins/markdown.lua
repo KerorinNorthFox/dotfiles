@@ -1,29 +1,14 @@
 return {
-  -- markdownのプレビューを行う
+  -- markdownのプレビューを行う (on community.lua)
   -- https://github.com/iamcco/markdown-preview.nvim
   -- コマンド
   -- :MarkdownPreview       # プレビューサーバー起動
   -- :MarkdownPreviewStop   # プレビューサーバー停止
   -- :MarkdownPreviewToggle # 起動/停止
-  {
-    "iamcco/markdown-preview.nvim",
-    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-    build = function()
-      require("lazy").load { plugins = { "markdown-preview.nvim" } }
-      vim.fn["mkdp#util#install"]()
-    end,
-    -- keys = {
-    --   {
-    --     "<leader>cp",
-    --     ft = "markdown",
-    --     "<cmd>MarkdownPreviewToggle<cr>",
-    --     desc = "Markdown Preview",
-    --   },
-    -- },
-    config = function() vim.cmd [[do FileType]] end,
-  },
+  -- { "iamcco/markdown-preview.nvim" },
 
   -- markdownをレンダリングして表示する
+  -- https://github.com/MeanderingProgrammer/render-markdown.nvim
   -- コマンド
   -- :RenderMarkdown (enable) # 開始
   -- :RenderMarkdown disable  # 停止

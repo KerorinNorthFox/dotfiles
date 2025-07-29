@@ -1,15 +1,10 @@
 -- コマンドでneovimを便利にするプラグイン
 
 return {
-  -- space+mでブロックの展開と縮小を行う
-  {
-    "Wansmer/treesj",
-    keys = { "<space>m", "<space>j", "<space>s" },
-    dependencies = { "nvim-treesitter/nvim-treesitter" },
-    opts = {},
-  },
+  -- space+mでブロックの展開と縮小を行う (on community.lua)
+  -- { "Wansmer/treesj" },
 
-  -- エディタ上部にファイル選択できるドロップバーを追加
+  -- エディタ上部にファイル選択できるドロップバーを追加 (on community.lua)
   {
     "Bekaboo/dropbar.nvim",
     -- optional, but required for fuzzy finder support
