@@ -2,6 +2,68 @@
 
 ---@type LazySpec
 return {
+  -- neovimのコマンドラインを画面中央にフロートして表示
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {},
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+      "L3MON4D3/LuaSnip",
+    },
+  },
+
+  {
+    "neovim/nvim-lspconfig",
+    dependencies = { "saghen/blink.cmp" },
+    config = function()
+      local lspconfig = require "lspconfig"
+      local capabilities = require("blink.cmp").get_lsp_capabilities {
+        textDocument = {
+          completion = {
+            snippetSupport = true,
+          },
+        },
+        foldingRange = {
+          dynamicRegistration = false,
+          lineFoldingOnly = true,
+        },
+      }
+    end,
+  },
+
+  -- コマンド等補完
+  -- 参考: https://minerva.mamansoft.net/Notes/%F0%9F%93%9C2025-04-02+nvim-cmp%E3%81%8B%E3%82%89blink.cmp%E3%81%AB%E7%A7%BB%E8%A1%8C%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B
+  {
+    "saghen/blink.cmp",
+    version = "1.*",
+    opts = {
+      completion = { documentation = { auto_show = true } },
+      sources = {
+        default = { "lsp", "path", "snippets", "buffer" },
+      },
+      fuzzy = {
+        implementation = "prefer_rust_with_warning",
+      },
+      windows = {
+        autocomplete = {
+          border = "rounded",
+        },
+        documentation = {
+          border = "",
+          max_height = 50,
+          auto_show_delay_ms = 250,
+        },
+        signature_help = {
+          border = "rounded",
+        },
+      },
+    },
+    opts_extend = { "sources.default" },
+  },
+
+  -- 括弧間やインデントを視覚的に表示
   {
     "shellRaining/hlchunk.nvim",
     event = { "BufReadPre", "BufNewFile" },
@@ -18,6 +80,7 @@ return {
     },
   },
 
+  -- カーソルを滑らかに動かす
   {
     "sphamba/smear-cursor.nvim",
     opts = {
@@ -29,6 +92,7 @@ return {
     },
   },
 
+  -- 画面下部にステータスラインを追加
   {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons", lazy = true },
@@ -38,6 +102,7 @@ return {
     },
   },
 
+  -- エディタ上部にファイル選択できるドロップバーを追加
   {
     "Bekaboo/dropbar.nvim",
     -- optional, but required for fuzzy finder support
@@ -54,6 +119,8 @@ return {
     end,
   },
 
+  -- DiscordのアクティビティにNeovimを表示
+  -- TODO:表示されない
   {
     "andweeb/presence.nvim",
     lazy = false,
@@ -66,6 +133,7 @@ return {
     opts = {},
   },
 
+  -- 便利なプラグインまとめ
   {
     "folke/snacks.nvim",
     opts = {
@@ -92,6 +160,7 @@ return {
     },
   },
 
+  -- jkでescが押せるようになる
   { "max397574/better-escape.nvim" },
 
   {
