@@ -2,6 +2,16 @@
 
 ---@type LazySpec
 return {
+  {
+    "mason-org/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "markdownlint-cli2",
+        "markdown-toc",
+      },
+    },
+  },
+
   -- use mason-tool-installer for automatically installing Mason packages
   {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
