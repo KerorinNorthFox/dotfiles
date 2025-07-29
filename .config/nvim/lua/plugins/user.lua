@@ -10,7 +10,6 @@ return {
     dependencies = {
       "MunifTanjim/nui.nvim",
       "rcarriga/nvim-notify",
-      "L3MON4D3/LuaSnip",
     },
   },
 
@@ -38,26 +37,19 @@ return {
   {
     "saghen/blink.cmp",
     version = "1.*",
+    dependencies = {
+      "L3MON4D3/LuaSnip",
+    },
     opts = {
       completion = { documentation = { auto_show = true } },
       sources = {
         default = { "lsp", "path", "snippets", "buffer" },
       },
+      snippets = {
+        preset = "luasnip",
+      },
       fuzzy = {
         implementation = "prefer_rust_with_warning",
-      },
-      windows = {
-        autocomplete = {
-          border = "rounded",
-        },
-        documentation = {
-          border = "",
-          max_height = 50,
-          auto_show_delay_ms = 250,
-        },
-        signature_help = {
-          border = "rounded",
-        },
       },
     },
     opts_extend = { "sources.default" },
@@ -170,6 +162,8 @@ return {
       -- add more custom luasnip configuration such as filetype extend or custom snippets
       local luasnip = require "luasnip"
       luasnip.filetype_extend("javascript", { "javascriptreact" })
+      require("luasnip.loaders.from_snipmate").lazy_load()
+      require("luasnip.loaders.from_lua").lazy_load()
     end,
   },
 
