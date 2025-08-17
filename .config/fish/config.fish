@@ -78,6 +78,14 @@ function multicd
 end
 abbr --add dotdot --regex '^\.\.+$' --function multicd
 
+function convert
+  if test (count $argv) -ne 2
+    echo "Usage: convert input_file output_file"
+    return 1
+  end
+  ffmpeg -i $argv[1] -c:v hevc_nvenc -preset p6 -rc vbr -f mp4 $argv[2]
+end
+
 ### Global variables
 set -gx CARGO_TARGET_DIR "$HOME/.cargo/target"
 set -U FZF_LEGACY_KEYBINDINGS 0
