@@ -28,3 +28,5 @@
 !/.config/zellij/**
 !/.rustup/
 !/.rustup/**
+
+.config/nvim/lazy-lock.json
