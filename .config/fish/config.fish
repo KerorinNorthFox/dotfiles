@@ -86,6 +86,22 @@ function convert
   ffmpeg -i $argv[1] -c:v hevc_nvenc -preset p6 -rc vbr -f mp4 $argv[2]
 end
 
+function compress
+  if test (count $argv) -ne 2
+    echo "Usage: compress input_file level"
+    return 1
+  end
+  ffmpeg -i $argv[1] -vcodec libx264 -crf $argv[2] -acodec aac -b:a 128k "$argv[1]_compress_$argv[2].mp4"
+end
+
+function osucrop
+  if test (count $argv) -ne 2
+    echo "Usage: osucrop input_file"
+    return 1
+  end
+  ffmpeg -i $argv[1] -vf crop=1270:720:325:160 "$argv[1]_cropped.mp4"
+end
+
 ### Global variables
 set -gx CARGO_TARGET_DIR "$HOME/.cargo/target"
 set -U FZF_LEGACY_KEYBINDINGS 0
