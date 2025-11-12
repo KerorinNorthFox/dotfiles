@@ -15,11 +15,6 @@ set PATH $HOME/.nimble/bin $PATH # nimble - pakcage manager for Nim
 set PATH /opt/nvim-linux-x86_64/bin $PATH
 set DISPLAY $(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 
-set fish_plugins theme peco
-function fish_user_key_bindings
-    bind \cw peco_select_history
-end
-
 ### Abbr, Alias and Command
 abbr py "python3.10"
 abbr nimcr "nim c -r"
