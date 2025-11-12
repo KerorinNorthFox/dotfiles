@@ -20,48 +20,6 @@ function fish_user_key_bindings
     bind \cw peco_select_history
 end
 
-function fish_greeting
-    echo "Do you execute package upgrade (with autoremove)? (y/n):"
-    read is_update
-    if test "$is_update" = y
-        sudo apt update && sudo apt upgrade -y
-        sudo apt autoremove -y
-    end
-
-    echo ""
-    echo "Hello "$USER"! Welcome to "(set_color cyan)"Fish Shell"(set_color normal)"! "
-    echo "Version: "$version
-    echo ""
-    echo (set_color magenta)"Command List"(set_color normal)":"
-    printf "  %sGeneral%s:
-    - z     : Move dir you often use.
-" (set_color magenta) (set_color normal)
-    printf "  %sI/O%s:
-    - less  : scrollable cat.
-    - wc -l : Display line count of file.
-    - df -h : Display the disk size.
-    - du -h : Display the dir size.
-    - btm   : Display resource viewer.
-" (set_color magenta) (set_color normal)
-    printf "  %sPackage%s:
-    - apt list -i : Display installed package.
-    - apt list -u : Display upgradable package.
-    - dpkg -l     : Display packages.
-    - fisher      : Fish plugins manager.
-" (set_color magenta) (set_color normal)
-    printf "  %sFish KeyBindings%s:
-    - Ct+ Arrow       : Forward(Backward) word. 
-    - Ct+Sh+ Arrow    : Forward(Backward) Big word.
-    - Ct+ a           : Jump to beginning of line.
-    - Ct+ e           : Jump to end of line.
-    - Ct+ l           : Clear.
-    - Ct+ c           : Clear commandline.
-    - Alt+ v, Alt+ e  : Edit commandline buffer.
-    - Ct+ o           : fzf find.
-" (set_color magenta) (set_color normal)
-
-end
-
 ### Abbr, Alias and Command
 abbr py "python3.10"
 abbr nimcr "nim c -r"
@@ -79,27 +37,27 @@ end
 abbr --add dotdot --regex '^\.\.+$' --function multicd
 
 function convert
-  if test (count $argv) -ne 2
-    echo "Usage: convert input_file output_file"
-    return 1
-  end
-  ffmpeg -i $argv[1] -c:v hevc_nvenc -preset p6 -rc vbr -f mp4 $argv[2]
+    if test (count $argv) -ne 2
+        echo "Usage: convert input_file output_file"
+        return 1
+    end
+    ffmpeg -i $argv[1] -c:v hevc_nvenc -preset p6 -rc vbr -f mp4 $argv[2]
 end
 
 function compress
-  if test (count $argv) -ne 2
-    echo "Usage: compress input_file level"
-    return 1
-  end
-  ffmpeg -i $argv[1] -vcodec libx264 -crf $argv[2] -acodec aac -b:a 128k "$argv[1]_compress_$argv[2].mp4"
+    if test (count $argv) -ne 2
+        echo "Usage: compress input_file level"
+        return 1
+    end
+    ffmpeg -i $argv[1] -vcodec libx264 -crf $argv[2] -acodec aac -b:a 128k "$argv[1]_compress_$argv[2].mp4"
 end
 
 function osucrop
-  if test (count $argv) -ne 2
-    echo "Usage: osucrop input_file"
-    return 1
-  end
-  ffmpeg -i $argv[1] -vf crop=1270:720:325:160 "$argv[1]_cropped.mp4"
+    if test (count $argv) -ne 2
+        echo "Usage: osucrop input_file"
+        return 1
+    end
+    ffmpeg -i $argv[1] -vf crop=1270:720:325:160 "$argv[1]_cropped.mp4"
 end
 
 ### Global variables
