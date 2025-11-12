@@ -1,7 +1,3 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
-
 ### load functions defined by user from ./user
 set -l user_scripts_dir ./user
 if test -d $user_scripts_dir
@@ -38,3 +34,8 @@ alias lzg lazygit
 set -gx CARGO_TARGET_DIR "$HOME/.cargo/target"
 set -U FZF_LEGACY_KEYBINDINGS 0
 set -gx EDITOR vi
+
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+    eval (zellij setup --generate-auto-start fish | string collect)
+end
