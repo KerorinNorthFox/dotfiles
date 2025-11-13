@@ -1,0 +1,30 @@
+layout {
+  pane size=1 split_direction="vertical" {
+    pane size="75%" borderless=true {
+      plugin location="tab-bar"
+    }
+    pane size="25%" borderless=true {
+      plugin location="file:~/.config/zellij/plugins/zellij-datetime.wasm" {
+        timezone1 "JST/+9"
+        default_timezone "JST"
+        background_color "#81b29a"
+        foreground_color "#29394f"
+        pane_color "#29394f"
+      }
+    }
+  }
+  
+  pane split_direction="vertical" {
+    pane size="15%" command="htop" close_on_exit=true
+    pane size="50%" command="nvim" focus=true
+    pane size="35%" split_direction="horizontal" {
+      pane
+      pane
+    }
+
+  }
+
+  pane size=1 borderless=true {
+    plugin location="status-bar"
+  }
+}
