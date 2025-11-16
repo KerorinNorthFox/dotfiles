@@ -1,9 +1,12 @@
 function fish_greeting
-    echo "Do you execute package upgrade (with autoremove)? (y/n):"
-    read is_update
-    if test "$is_update" = y
-        sudo apt update && sudo apt upgrade -y
-        sudo apt autoremove -y
+    if set -q ZELLIJ # true if variable `ZELLIJ` is existed.
+    else
+        echo "Do you execute package upgrade (with autoremove)? (y/n):"
+        read is_update
+        if test "$is_update" = y
+            sudo apt update && sudo apt upgrade -y
+            sudo apt autoremove -y
+        end
     end
 
     echo ""

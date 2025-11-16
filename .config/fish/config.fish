@@ -35,7 +35,7 @@ set -gx CARGO_TARGET_DIR "$HOME/.cargo/target"
 set -U FZF_LEGACY_KEYBINDINGS 0
 set -gx EDITOR vi
 
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-    eval (zellij setup --generate-auto-start fish | string collect)
-end
+# if status is-interactive
+#     # Commands to run in interactive sessions can go here
+#     eval (zellij setup --generate-auto-start fish | string collect)
+# end
