@@ -37,7 +37,7 @@ set -gx EDITOR vi
 set -x LESSCHARSET utf-8
 set -x GIT_PAGER less
 
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-    eval (zellij setup --generate-auto-start fish | string collect)
-end
+# if status is-interactive
+#     # Commands to run in interactive sessions can go here
+#     eval (zellij setup --generate-auto-start fish | string collect)
+# end
