@@ -1,11 +1,4 @@
 function fish_greeting
-    echo "Do you execute package upgrade (with autoremove)? (y/n):"
-    read is_update
-    if test "$is_update" = y
-        sudo apt update && sudo apt upgrade -y
-        sudo apt autoremove -y
-    end
-
     echo ""
     echo "Hello "$USER"! Welcome to "(set_color cyan)"Fish Shell"(set_color normal)"! "
     echo "Version: "$version

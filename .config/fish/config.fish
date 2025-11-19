@@ -34,6 +34,8 @@ alias lzg lazygit
 set -gx CARGO_TARGET_DIR "$HOME/.cargo/target"
 set -U FZF_LEGACY_KEYBINDINGS 0
 set -gx EDITOR vi
+set -x LESSCHARSET utf-8
+set -x GIT_PAGER less
 
 if status is-interactive
     # Commands to run in interactive sessions can go here

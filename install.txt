@@ -7,7 +7,7 @@ sudo apt update && sudo apt upgrade -y
 ===== 環境のセットアップ ======
 # fish shellの環境構築
 sudo apt install fish 
-chsh -s /usr/bin/fish # シェルの変更
+sudo chsh $USER -s /usr/bin/fish # シェルの変更 // Authentication failureを回避するために, sudoで実行とユーザー指定
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher 
 
 # Rust(Cargo)の環境構築
