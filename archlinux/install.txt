@@ -1,0 +1,54 @@
+## 注意：設定についてはdotfilesを参照
+## 　　　ここにはユーザーの行う操作だけを記述
+
+# パッケージのアップデート＆アップグレード
+sudo pacman -Syyu
+
+===== 環境のセットアップ ======
+# fish shellの環境構築
+sudo pacman -S fish
+
+# Rust(Cargo)の環境構築
+sudo pacman -S rustup # ~/.cargo/binをconfig.fishに
+
+# Nodejs(nvm)の環境構築
+sudo pacman -S nvm # nvmインストール
+fisher install fabioantunes/fish-nvm # nvmのfish用環境を構築してくれるプラグインをインストール
+fisher install edc/bass
+
+# Nim(choosenim)の環境構築
+curl https://nim-lang.org/choosenim/init.sh -sSf | sh # nim版pyenv的なchoosenim
+
+# Pythonの環境構築
+# TODO:
+
+# neovim最新版インストール, パスはconfig.nvmのfish用環境を構築してくれるプラグインをインストール
+sudo pacman -S neovim
+
+===== パッケージ関係のインストール ======
+# bottomインストール
+sudo pacman -S bottom
+
+# ripgrep(grep代替)インストール
+sudo pacman -S ripgrep
+
+sudo pacman -S git
+sudo pacman -S lazygit # TUI版git 
+sudo pacman -S fzf
+
+sudo pacman -S zellij # ターミナルエミュ
+sudo pacman -S eza # ls代替
+
+fisher install oh-my-fish/theme-bobthefish # fishのテーマ、設定はconfig.fishに既に記述してあるはず
+fisher install oh-my-fish/plugin-peco
+fisher install jethrokuan/z
+fisher install 0rax/fish-bd
+fisher install jethrokuan/fzf
+fisher install yuys13/fish-autols # cdしたときに自動でls
+
+npm install -g @authropic-ai/claude-code # AIコーディングエージェント
+
+
+# 最後にdotfilesの設定ファイルのシンボリックリンクを張る
+ln -s dotfiles/hoge ./hoge
+
