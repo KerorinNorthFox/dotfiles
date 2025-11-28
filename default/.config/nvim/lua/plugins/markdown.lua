@@ -29,17 +29,9 @@ return {
         enabled = false,
       },
     },
-    ft = { "markdown", "norg", "rmd", "org", "codecompanion" },
-    config = function(_, ops)
-      require("render-markdown").setup(opts)
-      Snacks.toggle({
-        name = "Render Markdown",
-        get = function() return require "render-markdown.state", enabled end,
-        set = function(enabled)
-          local m = require "render-markdown"
-          if enabled then m.enable() end
-        end,
-      }):map "<leader>um"
-    end,
+    ft = { "markdown" },
+    keys = {
+      { "<Space>Mm", ":RenderMarkdown toggle<CR>" },
+    },
   },
 }
