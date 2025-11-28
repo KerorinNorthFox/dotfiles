@@ -36,6 +36,8 @@ set -U FZF_LEGACY_KEYBINDINGS 0
 set -gx EDITOR vi
 set -x LESSCHARSET utf-8
 set -x GIT_PAGER less
+set -x LESS "-X -R"
+set -x LESSOPEN "| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 
 # if status is-interactive
 #     # Commands to run in interactive sessions can go here
