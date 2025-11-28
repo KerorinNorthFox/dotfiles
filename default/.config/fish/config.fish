@@ -1,7 +1,8 @@
 ### load functions defined by user from ./user
-set -l user_scripts_dir ./user
-if test -d $user_scripts_dir
-    for f in user_scripts_dir/*.fish
+set -l fish_location (dirname (status --current-filename))
+set -l fish_user_scripts "$fish_location/user"
+if test -d $fish_user_scripts
+    for f in $fish_user_scripts/*.fish
         source $f
     end
 end
