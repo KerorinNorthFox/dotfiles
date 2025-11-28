@@ -34,3 +34,4 @@
 !/default/.rustup/**
 
 default/.config/nvim/lazy-lock.json
+default/.config/go/**
