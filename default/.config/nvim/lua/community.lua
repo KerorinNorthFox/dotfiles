@@ -35,4 +35,5 @@ return {
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.split-and-window.colorful-winsep-nvim" },
   { import = "astrocommunity.split-and-window.neominimap-nvim" },
+  { import = "astrocommunity.utility.nvim-toggler" },
 }
