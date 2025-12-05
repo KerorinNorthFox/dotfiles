@@ -5,8 +5,29 @@ return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
     ensure_installed = {
+      "bash",
+      "c",
+      "c_sharp",
+      "css",
+      "cpp",
+      "fish",
+      "html",
+      "javascript",
+      "json",
+      "json5",
       "lua",
+      "luap",
+      "markdown",
+      "markdown_inline",
+      "nim",
+      "nim_format_string",
+      "python",
+      "query",
+      "typescript",
+      "xml",
+      "yaml",
       "vim",
+      "vimdoc",
       -- add more arguments for adding more treesitter parsers
     },
   },
@@ -23,7 +44,7 @@ return {
       mode = "cursor",
       separator = nil,
       zindex = 20,
-      on_attach = nil
-    }
-  }
+      on_attach = nil,
+    },
+  },
 }
