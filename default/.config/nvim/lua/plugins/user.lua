@@ -4,6 +4,23 @@
 
 ---@type LazySpec
 return {
+  -- ミニマップの右にスクロールバー用のスペースを空ける
+  {
+    "Isrothy/neominimap.nvim",
+    opts = {
+      float = {
+        margin = {
+          right = 1,
+        },
+      },
+    },
+  },
+  -- スクロールバーを追加する
+  {
+    "petertriho/nvim-scrollbar",
+    event = { "BufNewFile", "BufRead" },
+    config = function() require("scrollbar").setup() end,
+  },
   -- 検索時に検索結果を別ウィンドウでまとめて表示する
   {
     "kevinhwang91/nvim-hlslens",
