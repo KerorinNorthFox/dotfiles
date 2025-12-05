@@ -11,6 +11,12 @@ return {
       indent = {
         enabled = false,
       },
+      scroll = {
+        enable = false,
+      },
+      zen = {
+        enable = false,
+      },
       dashboard = {
         preset = {
           header = table.concat({
