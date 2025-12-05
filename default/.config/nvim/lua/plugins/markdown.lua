@@ -34,7 +34,7 @@ return {
     },
     ft = { "markdown" },
     keys = {
-      { "<Space>Mm", ":RenderMarkdown toggle<CR>" },
+      { "<Space>Mm", ":RenderMarkdown toggle<CR>", desc = "Toggle RenderMarkdown" },
     },
   },
 }
