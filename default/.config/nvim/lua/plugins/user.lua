@@ -4,6 +4,26 @@
 
 ---@type LazySpec
 return {
+  -- 検索時に検索結果を別ウィンドウでまとめて表示する
+  {
+    "kevinhwang91/nvim-hlslens",
+    event = { "FilterWritePre" },
+    keys = {
+      { "<Leader>L", desc = "hlslens" },
+    },
+    config = function()
+      require("hlslens").setup {
+        calm_down = true,
+        nearest_only = true,
+      }
+      vim.keymap.set({ "n", "x" }, "<Leader>L", function()
+        vim.schedule(function()
+          if require("hlslens").exportLastSearchToQuickfix() then vim.cmd "cw" end
+        end)
+        return ":noh<CR>"
+      end, { expr = true })
+    end,
+  },
   -- 画面下部ステータスラインを追加
   {
     "nvim-lualine/lualine.nvim",
