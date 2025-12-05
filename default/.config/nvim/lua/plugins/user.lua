@@ -13,24 +13,6 @@ return {
       section_separators = { left = "", right = "" },
     },
   },
-  -- neovimのコマンドラインを画面中央にフロートして表示 (on community.lua)
-  {
-    "folke/noice.nvim",
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-    },
-    event = "VeryLazy",
-    opts = {
-      -- lsp = {
-      --   hover = {
-      --     enabled = false,
-      --   },
-      --   signature = {
-      --     enabled = false,
-      --   },
-      -- },
-    },
-  },
   -- 括弧間やインデントを視覚的に表示
   {
     "shellRaining/hlchunk.nvim",

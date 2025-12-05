@@ -8,4 +8,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   -- import/override with your plugins folder
   { import = "astrocommunity.colorscheme.nightfox-nvim" },
+  -- neovimのコマンドラインをフロートして表示
+  { import = "astrocommunity.utility.noice-nvim" },
 }
