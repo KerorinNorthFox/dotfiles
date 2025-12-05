@@ -8,9 +8,24 @@ return {
   {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons", lazy = true },
+    event = { "BufNewFile", "BufRead" },
     opts = {
       component_separators = { left = "<", right = "<" },
       section_separators = { left = "", right = "" },
+      sections = {
+        lualine_a = { "mode" },
+        lualine_b = { "branch", "diff", "diagnostics" },
+        lualine_c = { "filename", "filesize" },
+        lualine_x = { "lsp_status", "encoding", "fileformat", "filetype" },
+        lualine_y = { "searchcount", "selectioncount", "progress" },
+        lualine_z = { "location" },
+      },
+      extensions = {
+        "lazy",
+        "mason",
+        "neo-tree",
+        "toggleterm",
+      },
     },
   },
   -- 括弧間やインデントを視覚的に表示
