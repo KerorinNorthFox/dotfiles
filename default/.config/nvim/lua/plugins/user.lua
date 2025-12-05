@@ -1,21 +1,57 @@
 -- You can also add or configure plugins by creating files in this `plugins/` folder
+-- PLEASE REMOVE THE EXAMPLES YOU HAVE NO INTEREST IN BEFORE ENABLING THIS FILE
+-- Here are some examples:
 
 ---@type LazySpec
 return {
-  -- DiscordのアクティビティにNeovimを表示
-  -- TODO:表示されない
+  -- 画面下部ステータスラインを追加
   {
-    "andweeb/presence.nvim",
-    lazy = false,
-    opts = {},
+    "nvim-lualine/lualine.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons", lazy = true },
+    opts = {
+      component_separators = { left = "<", right = "<" },
+      section_separators = { left = "", right = "" },
+    },
   },
-
-  -- 便利なプラグインまとめ
+  -- 括弧間やインデントを視覚的に表示
+  {
+    "shellRaining/hlchunk.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    opts = {
+      chunk = {
+        enable = true,
+      },
+      indent = {
+        enable = true,
+      },
+      line_num = {
+        enable = true,
+      },
+    },
+  },
+  -- カーソルを滑らかに動かす
+  {
+    "sphamba/smear-cursor.nvim",
+    opts = {
+      stiffness = 0.8,
+      trailing_stiffness = 0.5,
+      distance_stop_animating = 0.5,
+      smear_between_buffers = true, -- Be smooth cursor when switching buffers.
+      -- scroll_buffer_space = true
+    },
+  },
+  -- Snacks.nvim : 便利なプラグインまとめ
   {
     "folke/snacks.nvim",
     opts = {
       indent = {
         enabled = false,
+      },
+      scroll = {
+        enable = false,
+      },
+      zen = {
+        enable = false,
       },
       dashboard = {
         preset = {
@@ -36,7 +72,16 @@ return {
       },
     },
   },
-
+  -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
+  {
+    "L3MON4D3/LuaSnip",
+    config = function(plugin, opts)
+      require "astronvim.plugins.configs.luasnip"(plugin, opts) -- include the default astronvim config that calls the setup call
+      -- add more custom luasnip configuration such as filetype extend or custom snippets
+      local luasnip = require "luasnip"
+      luasnip.filetype_extend("javascript", { "javascriptreact" })
+    end,
+  },
   {
     "windwp/nvim-autopairs",
     config = function(plugin, opts)

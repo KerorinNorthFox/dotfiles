@@ -1,9 +1,10 @@
 return {
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-  },
-
-  -- { "EdenEast/nightfox.nvim", } on community.lua
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  -- },
+  -- {
+  --   "EdenEast/nightfox.nvim", -- (on community.lua)
+  -- },
 }

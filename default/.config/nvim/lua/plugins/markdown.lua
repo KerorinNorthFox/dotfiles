@@ -6,7 +6,10 @@ return {
   -- :MarkdownPreviewStop   # プレビューサーバー停止
   -- :MarkdownPreviewToggle # 起動/停止
   -- { "iamcco/markdown-preview.nvim" },
-
+  {
+    "AstroNvim/astrocommunity",
+    { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  },
   -- markdownをレンダリングして表示する
   -- https://github.com/MeanderingProgrammer/render-markdown.nvim
   -- コマンド

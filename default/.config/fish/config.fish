@@ -17,6 +17,7 @@ set -g theme_nerd_fonts yes
 ### Dev env setting
 set PATH $HOME/.cargo/bin $PATH # cargo - package manager for Rust
 set PATH $HOME/.nimble/bin $PATH # nimble - pakcage manager for Nim
+set PATH $(dirname (which npm)) $PATH # npm and node - package manager for JS
 set PATH /opt/nvim-linux-x86_64/bin $PATH
 set DISPLAY $(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 
