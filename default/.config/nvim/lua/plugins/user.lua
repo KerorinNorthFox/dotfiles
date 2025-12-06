@@ -4,6 +4,16 @@
 
 ---@type LazySpec
 return {
+  -- {
+  --   "tribela/transparent.nvim",
+  --   event = "VimEnter",
+  --   config = true,
+  -- },
+  -- {
+  --   "kylechui/nvim-surround",
+  --   event = "VeryLazy",
+  --   config = function() require("nvim-surround").setup() end,
+  -- },
   -- カラーコードに色を付けて表示
   {
     "catgoose/nvim-colorizer.lua",
@@ -19,12 +29,6 @@ return {
         },
       },
     },
-  },
-  -- スクロールバーを追加する
-  {
-    "petertriho/nvim-scrollbar",
-    event = { "BufNewFile", "BufRead" },
-    config = function() require("scrollbar").setup() end,
   },
   -- 検索時に検索結果を別ウィンドウでまとめて表示する
   {
@@ -56,8 +60,8 @@ return {
       section_separators = { left = "", right = "" },
       sections = {
         lualine_a = { "mode" },
-        lualine_b = { "branch", "diff", "diagnostics" },
-        lualine_c = { "filename", "filesize" },
+        lualine_b = { "branch", "diff" },
+        lualine_c = { "filename", "filesize", "diagnostics" },
         lualine_x = { "lsp_status", "encoding", "fileformat", "filetype" },
         lualine_y = { "searchcount", "selectioncount", "progress" },
         lualine_z = { "location" },
