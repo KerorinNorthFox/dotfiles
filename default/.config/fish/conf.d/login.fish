@@ -1,4 +1,11 @@
 function fish_greeting
+    ### When Zellij is not in use.
+    if not test $ZELLIJ
+        if type -q fastfetch
+            fastfetch
+        end
+    end
+    
     echo ""
     echo "Hello "$USER"! Welcome to "(set_color cyan)"Fish Shell"(set_color normal)"! "
     echo "Version: "$version

@@ -49,9 +49,3 @@ set -x LESSOPEN "| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 #     eval (zellij setup --generate-auto-start fish | string collect)
 # end
 
-### When Zellij is not in use.
-if not test $ZELLIJ
-    if type -q fastfetch
-        fastfetch
-    end
-end
