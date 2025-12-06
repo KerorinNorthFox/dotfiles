@@ -4,6 +4,11 @@
 
 ---@type LazySpec
 return {
+  -- カラーコードに色を付けて表示
+  {
+    "catgoose/nvim-colorizer.lua",
+    event = "BufReadPre",
+  },
   -- ミニマップの右にスクロールバー用のスペースを空ける
   {
     "Isrothy/neominimap.nvim",
