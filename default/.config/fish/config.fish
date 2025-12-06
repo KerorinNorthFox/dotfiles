@@ -48,3 +48,10 @@ set -x LESSOPEN "| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 #     # Commands to run in interactive sessions can go here
 #     eval (zellij setup --generate-auto-start fish | string collect)
 # end
+
+### When Zellij is not in use.
+if not test $ZELLIJ
+    if type -q fastfetch
+        fastfetch
+    end
+end
