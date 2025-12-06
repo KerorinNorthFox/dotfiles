@@ -34,6 +34,7 @@ alias la "eza -la"
 alias zlj zellij
 alias grep rg
 alias lzg lazygit
+alias bat batcat
 
 ### Global variables
 set -gx CARGO_TARGET_DIR "$HOME/.cargo/target"

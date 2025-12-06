@@ -15,8 +15,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh # ~/.cargo/binを
 
 # Nodejs(nvm)の環境構築
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash # nvmインストール
-fisher install fabioantunes/fish-nvm # nvmのfish用環境を構築してくれるプラグインをインストール
-fisher install edc/bass
+fisher install jorgebucaran/nvm.fish
 
 # Nim(choosenim)の環境構築
 curl https://nim-lang.org/choosenim/init.sh -sSf | sh # nim版pyenv的なchoosenim
@@ -40,16 +39,21 @@ sudo dpkg -i ripgrep_14.1.1-1_amd64.deb
 sudo apt install git
 sudo apt install lazygit # TUI版git 
 sudo apt install fzf
+sudo apt install htop
+sudo apt install bat # cat with syntax highlight
+sudp snap install lsd # colored ls with icons
+sudo apt-add-repository ppa:zhangsongcui3371/fastfetch
+sudo apt install fastfetch
 
 cargo install --locked zellij # ターミナルエミュ
 cargo install eza # ls代替
 
 fisher install oh-my-fish/theme-bobthefish # fishのテーマ、設定はconfig.fishに既に記述してあるはず
-fisher install oh-my-fish/plugin-peco
 fisher install jethrokuan/z
 fisher install 0rax/fish-bd
 fisher install jethrokuan/fzf
 fisher install yuys13/fish-autols # cdしたときに自動でls
+
 
 npm install -g @authropic-ai/claude-code # AIコーディングエージェント
 
