@@ -74,17 +74,25 @@ return {
   {
     "shellRaining/hlchunk.nvim",
     event = { "BufReadPre", "BufNewFile" },
-    opts = {
-      chunk = {
-        enable = true,
-      },
-      indent = {
-        enable = true,
-      },
-      line_num = {
-        enable = true,
-      },
-    },
+    opts = function()
+      local palette = require("nightfox.palette").load "nordfox"
+      return {
+        chunk = {
+          enable = true,
+          style = {
+            palette.cyan.bright,
+            palette.red.bright,
+          },
+        },
+        indent = {
+          enable = true,
+        },
+        line_num = {
+          enable = true,
+          style = palette.cyan.base,
+        },
+      }
+    end,
   },
   -- カーソルを滑らかに動かす
   {
