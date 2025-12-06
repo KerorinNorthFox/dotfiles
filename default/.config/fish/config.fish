@@ -29,12 +29,19 @@ abbr py "python3.10"
 abbr nimcr "nim c -r"
 abbr coding "cd /mnt/c/Users/masat/Desktop/program"
 
-alias ls eza
-alias la "eza -la"
+if type  -q eza
+    alias ls eza
+    alias la "eza -la"
+end
 alias zlj zellij
-alias grep rg
 alias lzg lazygit
+if type -q rg
+    alias grep rg
+end
 alias bat batcat
+if type -q delta
+    alias diff delta
+end
 
 ### Global variables
 set -gx CARGO_TARGET_DIR "$HOME/.cargo/target"
