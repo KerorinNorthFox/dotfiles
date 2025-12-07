@@ -15,17 +15,20 @@ function fish_greeting
     - z     : Move dir you often use.
 " (set_color magenta) (set_color normal)
     printf "  %sI/O%s:
-    - less  : scrollable cat.
+    - bat   : cat with syntax highlight.
     - wc -l : Display line count of file.
     - df -h : Display the disk size.
     - du -h : Display the dir size.
-    - btm   : Display resource viewer.
 " (set_color magenta) (set_color normal)
     printf "  %sPackage%s:
     - apt list -i : Display installed package.
     - apt list -u : Display upgradable package.
     - dpkg -l     : Display packages.
     - fisher      : Fish plugins manager.
+" (set_color magenta) (set_color normal)
+    printf "  %sCheatSheet%s:
+    - navi : interactive cheatsheet.
+    - tldr : Display example of command.
 " (set_color magenta) (set_color normal)
     printf "  %sFish KeyBindings%s:
     - Ct+ Arrow       : Forward(Backward) word. 
