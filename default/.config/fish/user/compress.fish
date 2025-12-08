@@ -36,11 +36,12 @@ function compress
     
     set -l input $argv[1]
     set -l rate $argv[2]
+    set -l output "{$input}_compress_{$rate}.mp4"
 
     if type -q nvidia-smi
         echo "[INFO]:GPU is available for compress."
-        ffmpeg -i "$input" -c:v $encoder_gpu -cq $rate -c:a -preset p6 aac -b:a 128k "$input_compress_$rate.mp4"
+        ffmpeg -i "$input" -c:v $encoder_gpu -cq $rate -c:a -preset p6 aac -b:a 128k $output
     else
-        ffmpeg -i "$input" -c:v $encoder_cpu -crf $rate -c:a aac -b:a 128k "$input_compress_$rate.mp4"
+        ffmpeg -i "$input" -c:v $encoder_cpu -crf $rate -c:a aac -b:a 128k $output
     end
 end

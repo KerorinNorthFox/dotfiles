@@ -8,5 +8,4 @@ function convert
     set -l output $argv[2]
     
     ffmpeg -i $input -c:v copy -c:a copy -movflags +faststart $output
-    end
 end
