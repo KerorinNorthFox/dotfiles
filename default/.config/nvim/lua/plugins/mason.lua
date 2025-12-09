@@ -12,6 +12,7 @@ return {
         -- install language servers
         "lua-language-server",
         "nimlangserver",
+        "fish-lsp",
 
         -- install formatters
         "stylua",
