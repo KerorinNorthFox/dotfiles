@@ -40,7 +40,7 @@ function compress
 
     if type -q nvidia-smi
         echo "[INFO]:GPU is available for compress."
-        ffmpeg -i "$input" -c:v $encoder_gpu -cq $rate -c:a -preset p6 aac -b:a 128k $output
+        ffmpeg -i "$input" -c:v $encoder_gpu -cq $rate -c:a aac -preset p6 -b:a 128k $output
     else
         ffmpeg -i "$input" -c:v $encoder_cpu -crf $rate -c:a aac -b:a 128k $output
     end
