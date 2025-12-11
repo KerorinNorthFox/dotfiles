@@ -15,13 +15,13 @@ set -g theme_color_scheme terminal2
 set -g theme_nerd_fonts yes
 
 ### Dev env setting
-set PATH $(dirname (which cargo)) $PATH # cargo - package manager for Rust
-set PATH $(dirname (which nimble)) $PATH # nimble - pakcage manager for Nim
+set PATH $HOME/.cargo/bin $PATH # cargo - package manager for Rust
+set PATH $HOME/.nimble/bin $PATH # nimble - pakcage manager for Nim
 if type -q nvm
     nvm use latest --silent
 end
 set PATH $(dirname (which npm)) $PATH # npm and node - package manager for JS
-set PATH $(dirname (which nvim)) $PATH
+set PATH /opt/nvim-linux-x86_64/bin $PATH
 set DISPLAY $(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 
 ### Abbr, Alias and Command
