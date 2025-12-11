@@ -1,6 +1,6 @@
 function compress
     if test (count $argv) -lt 2
-        echo "Usage: compress input_file level "
+        echo "Usage: compress input_file level --encoder"
         echo "OPTIONS"
         echo "--encoder [h264|h265]"
         return 1
