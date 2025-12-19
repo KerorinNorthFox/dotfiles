@@ -23,6 +23,8 @@ end
 set PATH $(dirname (which npm)) $PATH # npm and node - package manager for JS
 set PATH /opt/nvim-linux-x86_64/bin $PATH
 set DISPLAY $(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
 
 ### Abbr, Alias and Command
 abbr py "python3.10"
