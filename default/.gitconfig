@@ -11,3 +11,12 @@
 	defaultBranch = main
 [core]
 	editor = vim
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+	line-numbers = true
+
+[delta]
+	navigate = true
+	dark = true
