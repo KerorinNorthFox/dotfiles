@@ -23,6 +23,7 @@ return {
       "nim_format_string",
       "python",
       "query",
+      "rust",
       "typescript",
       "xml",
       "yaml",

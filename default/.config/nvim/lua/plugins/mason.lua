@@ -9,16 +9,25 @@ return {
     opts = {
       -- Make sure to use the names found in `:Mason`
       ensure_installed = {
-        -- install language servers
+        -- install LSP
+        "astro-language-server",
         "lua-language-server",
         "nimlangserver",
         "fish-lsp",
+        "emmet-ls", -- htmlやcssを楽に書けるEmmetを使用可能にする
+        "tinymist",
 
         -- install formatters
         "stylua",
+        "taplo",
+
+        -- install linter
+        "selene",
 
         -- install debuggers
         -- "debugpy",
+        "codelldb",
+        "js-debug-adapter",
 
         -- install any other package
         "tree-sitter-cli",
@@ -34,6 +43,11 @@ return {
         "json-lsp",
         "typescript-language-server",
         "prettierd",
+        "svelte-language-server",
+        "vtsls",
+
+        -- For Rust
+        "rust-analyzer",
       },
     },
   },
