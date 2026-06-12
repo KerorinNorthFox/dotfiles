@@ -17,6 +17,7 @@ set -g theme_nerd_fonts yes
 ### Dev env setting
 set PATH $HOME/.cargo/bin $PATH # cargo - package manager for Rust
 set PATH $HOME/.nimble/bin $PATH # nimble - pakcage manager for Nim
+set PATH $HOME/.local/bin $PATH
 if type -q nvm
     nvm use latest --silent
 end
