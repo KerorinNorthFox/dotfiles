@@ -36,8 +36,10 @@ return {
       -- end
     },
     -- enable servers that you already have installed without mason
+    -- Masonで有効化したlspのうち、lspconfigにないものをここに追記
     servers = {
       -- "pyright"
+      "fish_lsp",
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields

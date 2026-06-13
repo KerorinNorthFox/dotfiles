@@ -5,11 +5,20 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  { import = "astrocommunity.pack.astro" },
+  { import = "astrocommunity.pack.fish" },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.mdx" },
+  { import = "astrocommunity.pack.nim" },
+  { import = "astrocommunity.pack.prettier" },
+  { import = "astrocommunity.pack.python.base" },
+  { import = "astrocommunity.pack.python.basedpyright" },
+  { import = "astrocommunity.pack.python.ruff" },
   { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.typst" },
   -- import/override with your plugins folder
   -- タブバーとエディタ画面の間にドロップダウン式のパンくずリストを表示
