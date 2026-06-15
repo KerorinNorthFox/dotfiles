@@ -23,4 +23,3 @@ SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR _fisher_yuys13_2F_fish_2D_autols_files:\x7e/\x2econfig/fish/conf\x2ed/autols\x2efish
 SETUVAR autols_cmd:ls
 SETUVAR fish_greeting:\x1d
-SETUVAR fish_key_bindings:fish_default_key_bindings
