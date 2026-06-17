@@ -35,4 +35,9 @@ return {
   { import = "astrocommunity.split-and-window.neominimap-nvim" },
   -- 0-1の選択肢を持つ単語を切り替える
   { import = "astrocommunity.utility.nvim-toggler" },
+  -- 右クリックでポップアップメニューを表示する
+  { import = "astrocommunity.utility.nvzone-menu" },
+  -- ターミナルをフロートして表示
+  { import = "astrocommunity.terminal-integration.floaterm" },
+  { import = "astrocommunity.syntax.hlargs-nvim" },
 }
