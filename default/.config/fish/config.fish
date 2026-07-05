@@ -18,6 +18,7 @@ set -g theme_nerd_fonts yes
 set PATH $HOME/.cargo/bin $PATH # cargo - package manager for Rust
 set PATH $HOME/.nimble/bin $PATH # nimble - pakcage manager for Nim
 set PATH $HOME/.local/bin $PATH
+set PATH /usr/local/cuda/bin $PATH
 if type -q nvm
     nvm use latest --silent
 end
@@ -32,7 +33,7 @@ abbr py "python3.10"
 abbr nimcr "nim c -r"
 abbr coding "cd /mnt/c/Users/masat/Desktop/program"
 
-if type  -q eza
+if type -q eza
     alias ls eza
     alias la "eza -la"
 end
@@ -44,6 +45,9 @@ end
 alias bat batcat
 if type -q delta
     alias diff delta
+end
+if type -q ~/.cargo/target/release/same-image-detector
+    alias same-image-detector ~/.cargo/target/release/same-image-detector
 end
 
 ### Global variables
@@ -58,4 +62,3 @@ set -x LESSOPEN "| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 #     # Commands to run in interactive sessions can go here
 #     eval (zellij setup --generate-auto-start fish | string collect)
 # end
-
