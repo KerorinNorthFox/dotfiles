@@ -3,8 +3,10 @@ set -l fish_location (dirname (status --current-filename))
 set -l fish_user_scripts "$fish_location/user"
 if test -d $fish_user_scripts
     for f in $fish_user_scripts/*.fish
+        echo "Load script $f"
         source $f
     end
+    echo ""
 end
 
 ### Fish shell theme setting
