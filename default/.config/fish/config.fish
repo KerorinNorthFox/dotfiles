@@ -46,8 +46,8 @@ alias bat batcat
 if type -q delta
     alias diff delta
 end
-if type -q ~/.cargo/target/release/same-image-detector
-    alias same-image-detector ~/.cargo/target/release/same-image-detector
+if type -q ~/.cargo/target/release/dup-img-remover
+    alias dup-img-remover ~/.cargo/target/release/dup-img-remover
 end
 
 ### Global variables
