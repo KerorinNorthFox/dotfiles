@@ -29,6 +29,8 @@
 !/default/.config/nvim_old_setting/**
 !/default/.config/zellij/
 !/default/.config/zellij/**
+!/default/.config/wezterm/
+!/default/.config/wezterm/**
 !/default/.rustup/
 !/default/.rustup/**
 
