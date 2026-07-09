@@ -1,9 +1,9 @@
 layout {
     pane size=1 split_direction="vertical" {
-        pane size="75%" borderless=true {
+        pane size="60%" borderless=true {
             plugin location="tab-bar"
         }
-        pane size="25%" borderless=true {
+        pane size="40%" borderless=true {
             plugin location="file:/home/$USER/.config/zellij/plugins/zellij-datetime.wasm" {
                 timezone1 "JST/+9"
                 default_timezone "JST"
