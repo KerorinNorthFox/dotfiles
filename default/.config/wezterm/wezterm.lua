@@ -23,6 +23,7 @@ config.window_frame = {
 --
 -- fonts
 --
+config.font = wezterm.font("FiraCode Nerd Font Mono", { weight = "Medium", stretch = "Normal", style = "Normal" })
 config.font_size = 10.0
 
 --
