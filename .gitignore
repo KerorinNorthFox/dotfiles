@@ -27,6 +27,8 @@
 !/default/.config/nvim/**
 !/default/.config/nvim_old_setting/
 !/default/.config/nvim_old_setting/**
+!/default/.config/yazi/
+!/default/.config/yazi/**
 !/default/.config/zellij/
 !/default/.config/zellij/**
 !/default/.config/wezterm/
