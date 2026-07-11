@@ -5,7 +5,7 @@ function fish_greeting
             fastfetch
         end
     end
-    
+
     echo ""
     echo "Hello "$USER"! Welcome to "(set_color cyan)"Fish Shell"(set_color normal)"! "
     echo "Version: "$version
@@ -13,6 +13,7 @@ function fish_greeting
     echo (set_color magenta)"Command List"(set_color normal)":"
     printf "  %sGeneral%s:
     - z     : Move dir you often use.
+    - y     : Open yazi file manager and cd when quits.
 " (set_color magenta) (set_color normal)
     printf "  %sI/O%s:
     - bat   : cat with syntax highlight.
