@@ -51,6 +51,16 @@ end
 if type -q ~/.cargo/target/release/dup-img-remover
     alias dup-img-remover ~/.cargo/target/release/dup-img-remover
 end
+if type -q yazi # yaziで移動したディレクトリにq時にcdするコマンドyを定義.
+    function y
+        set tmp (mktemp -t "yazi-cwd.XXXXXX")
+        command yazi $argv --cwd-file="$tmp"
+        if read -z cwd <"$tmp"; and [ "$cwd" != "$tmp" ]; and test -d "$cwd"
+            builtin cd -- "$cwd"
+        end
+        command rm -f -- "$tmp"
+    end
+end
 
 ### Global variables
 set -gx CARGO_TARGET_DIR "$HOME/.cargo/target"
