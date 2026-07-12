@@ -1,3 +1,6 @@
+-- set windows environment variable
+-- '\\wsl$\Ubuntu\home\kerorinnf\dotfiles\default\.config\wezterm\wezterm.lua'
+-- as 'WEZTERM_CONFIG_FILE' if using wsl.
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
@@ -47,7 +50,7 @@ config.background = {
 -- タブの見た目
 local SOLID_LEFT_ARROW = wezterm.nerdfonts.ple_lower_right_triangle
 local SOLID_RIGHT_ARROW = wezterm.nerdfonts.ple_upper_left_triangle
-wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
+wezterm.on("format-tab-title", function(tab, tabs, panes, conf, hover, max_width)
 	local background = "#84A0C6"
 	local foreground = "#C6C8D1"
 	local edge_background = "none"
