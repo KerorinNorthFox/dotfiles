@@ -49,7 +49,7 @@ config.background = {
 }
 -- タブの見た目
 local SOLID_LEFT_ARROW = wezterm.nerdfonts.ple_lower_right_triangle
-local SOLID_RIGHT_ARROW = wezterm.nerdfonts.ple_upper_left_triangle
+local SOLID_RIGHT_ARROW = wezterm.nerdfonts.ple_lower_left_triangle
 wezterm.on("format-tab-title", function(tab, tabs, panes, conf, hover, max_width)
 	local background = "#84A0C6"
 	local foreground = "#C6C8D1"
