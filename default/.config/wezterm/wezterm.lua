@@ -10,6 +10,7 @@ local config = wezterm.config_builder()
 config.automatically_reload_config = true -- same as default value
 config.audible_bell = "Disabled"
 config.use_ime = true
+config.default_domain = "WSL:Ubuntu"
 
 --
 -- visibility
