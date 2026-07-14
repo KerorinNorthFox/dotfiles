@@ -5,6 +5,8 @@
 !/default
 !/ubuntu
 !/archlinux
+!/nixos
+!/nixos/**
 
 !/ubuntu/.bash_logout
 !/ubuntu/.bashrc
