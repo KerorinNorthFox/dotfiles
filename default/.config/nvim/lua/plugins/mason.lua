@@ -13,17 +13,20 @@ return {
 
         -- install LSP
         "astro-language-server",
+        "autohotkey_lsp",
         "fish-lsp",
         "json-lsp",
+        "nil", -- nix
         "pyright",
         "rust-analyzer",
         "typescript-language-server",
 
         -- install formatters
-        "taplo",
+        "nixfmt",
+        "taplo", -- toml
 
         -- install linter
-        "selene",
+        "selene", -- lua
 
         -- install debuggers
         -- "debugpy",
