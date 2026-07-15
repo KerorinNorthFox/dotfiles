@@ -23,6 +23,13 @@ set PATH $HOME/.local/bin $PATH
 set PATH /usr/local/cuda/bin $PATH
 if type -q nvm
     nvm use latest --silent
+    if test $status -ne 0 # install latest node if there is not.
+        read -P "Setting node version to latest is failed. Do you install latest version?[y/n] : " is_install_nvm
+        if test "$is_install_nvm" = y -o "$is_install_nvm" = Y
+            nvm install latest
+            nvm use latest
+        end
+    end
 end
 set PATH $(dirname (which npm)) $PATH # npm and node - package manager for JS
 set PATH /opt/nvim-linux-x86_64/bin $PATH
@@ -44,7 +51,9 @@ alias lzg lazygit
 if type -q rg
     alias grep rg
 end
-alias bat batcat
+if type -q batcat
+    alias bat batcat
+end
 if type -q delta
     alias diff delta
 end
