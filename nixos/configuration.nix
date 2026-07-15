@@ -14,8 +14,10 @@
   ];
 
   environment.systemPackages = with pkgs;[
+    bat # cat with syntax highlighting
     delta # Syntax-highlighting pager for git
     eza # replacement for ls
+    fastfetch # system information
     gcc
     git
     gnumake # make
@@ -32,7 +34,7 @@
   };
 
   programs.fish.enable = true;
-  programs.nix-ld.enable = true;
+  programs.nix-ld.enable = true; # Run unpatched dynamic binaries
 
   security.sudo.wheelNeedsPassword = true;
 
