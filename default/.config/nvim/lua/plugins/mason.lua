@@ -16,7 +16,6 @@ return {
         "autohotkey_lsp",
         "fish-lsp",
         "json-lsp",
-        "nil", -- nix
         "pyright",
         "rust-analyzer",
         "typescript-language-server",
