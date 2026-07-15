@@ -17,13 +17,20 @@
 
   environment.systemPackages = with pkgs;[
     bat # cat with syntax highlighting
+    binutils # Tools for manipulating binaries (linker, assembler, etc.) (wrapper script)
+    bottom
+    btop
     delta # Syntax-highlighting pager for git
     eza # replacement for ls
     fastfetch # system information
+    fd # fast find
     gcc
     git
     gnumake # make
     neovim
+    pkg-config # Tool that allows packages to find out information about other packages (wrapper script)
+    ripgrep # fast grep
+    unzip # Extraction utility for archives compressed in .zip format
     vim
     wget
   ];
