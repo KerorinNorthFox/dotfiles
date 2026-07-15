@@ -33,6 +33,8 @@
     unzip # Extraction utility for archives compressed in .zip format
     vim
     wget
+    yazi
+    zellij
   ];
 
   users.users.kerorinnf = {
