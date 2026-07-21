@@ -1,3 +1,13 @@
+function _colored_print -a color text
+    echo (set_color $color)"$text"(set_color normal)
+end
+
+function _print_help_if_exist -a command help
+    if type -q $command
+        echo "    $help"
+    end
+end
+
 function fish_greeting
     ### When Zellij is not in use.
     if not test $ZELLIJ
@@ -10,36 +20,36 @@ function fish_greeting
     echo "Hello "$USER"! Welcome to "(set_color cyan)"Fish Shell"(set_color normal)"! "
     echo "Version: "$version
     echo ""
-    echo (set_color magenta)"Command List"(set_color normal)":"
-    printf "  %sGeneral%s:
-    - z     : Move dir you often use.
-    - y     : Open yazi file manager and cd when quits.
-" (set_color magenta) (set_color normal)
-    printf "  %sI/O%s:
-    - bat   : cat with syntax highlight.
-    - wc -l : Display line count of file.
-    - df -h : Display the disk size.
-    - du -h : Display the dir size.
-" (set_color magenta) (set_color normal)
-    printf "  %sPackage%s:
-    - apt list -i : Display installed package.
-    - apt list -u : Display upgradable package.
-    - dpkg -l     : Display packages.
-    - fisher      : Fish plugins manager.
-" (set_color magenta) (set_color normal)
-    printf "  %sCheatSheet%s:
-    - navi : interactive cheatsheet.
-    - tldr : Display example of command.
-" (set_color magenta) (set_color normal)
-    printf "  %sFish KeyBindings%s:
-    - Ct+ Arrow       : Forward(Backward) word. 
-    - Ct+Sh+ Arrow    : Forward(Backward) Big word.
-    - Ct+ a           : Jump to beginning of line.
-    - Ct+ e           : Jump to end of line.
-    - Ct+ l           : Clear.
-    - Ct+ c           : Clear commandline.
-    - Alt+ v, Alt+ e  : Edit commandline buffer.
-    - Ct+ o           : fzf find.
-" (set_color magenta) (set_color normal)
+
+    _colored_print magenta "Command List:"
+    _colored_print magenta "General:"
+    _print_help_if_exist z "- z     : Move dir you often use."
+    _print_help_if_exist y "- y     : Open yazi file manager and cd when quits."
+
+    _colored_print magenta "I/O:"
+    _print_help_if_exist bat "- bat   : cat with syntax highlight."
+    _print_help_if_exist wc "- wc -l : Display line count of file."
+    _print_help_if_exist df "- df -h : Display the disk size."
+    _print_help_if_exist du "- du -h : Display the dir size."
+
+    _colored_print magenta "Packages:"
+    _print_help_if_exist apt "- apt list -i : Display installed package."
+    _print_help_if_exist apt "- apt list -u : Display upgradable package."
+    _print_help_if_exist dpkg "- dpkg -l     : Display packages."
+    _print_help_if_exist fisher "- fisher      : Fish plugins manager."
+
+    _colored_print magenta "CheatSheet:"
+    _print_help_if_exist navi "- navi : interactive cheatsheet."
+    _print_help_if_exist tldr "- tldr : Display example of command."
+
+    _colored_print magenta "Fish KeyBindings:"
+    echo "    - Ct+ Arrow       : Forward(Backward) word. "
+    echo "    - Ct+Sh+ Arrow    : Forward(Backward) Big word."
+    echo "    - Ct+ a           : Jump to beginning of line."
+    echo "    - Ct+ e           : Jump to end of line."
+    echo "    - Ct+ l           : Clear."
+    echo "    - Ct+ c           : Clear commandline."
+    echo "    - Alt+ v, Alt+ e  : Edit commandline buffer."
+    echo "    - Ct+ o           : fzf find."
 
 end
