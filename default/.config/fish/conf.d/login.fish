@@ -24,6 +24,8 @@ function fish_greeting
     _colored_print magenta "Command List:"
     _colored_print magenta "General:"
     _print_help_if_exist z "- z     : Move dir you often use."
+    _print_help_if_exist nixos-rebuild "- nixos-rebuild switch : "
+    _print_help_if_exist nix-env "- nix-env --list-generations --profiles /nix/var/nix/profiles/system : Show hisotry of previous nix environments versions."
 
     _colored_print magenta "I/O:"
     _print_help_if_exist bat "- bat   : cat with syntax highlight."
