@@ -5,10 +5,10 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   # boot.loader.systemd-boot.enable = true;
@@ -85,12 +85,21 @@
   users.users."kerorinnf" = {
     isNormalUser = true;
     description = "kerorinnf";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
+    openssh.authorizedKeys.keys = [
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGUZf+ifLseJwNLyys+N1/5v/NJF2278WH1aWDAMn6Yy masat@masato_desktop"
+    ];
+    packages = with pkgs; [ ];
     shell = pkgs.fish;
   };
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -99,17 +108,18 @@
   # $ nix search wget
   environment.shells = [ pkgs.fish ];
   environment.systemPackages = with pkgs; [
-  vim
-  wget
-  git
-  btop
+    vim
+    wget
+    git
+    delta
+    btop
 
-  zellij
-  eza
-  bat
-  fastfetch
-  neovim
-  
+    zellij
+    eza
+    bat
+    fastfetch
+    neovim
+
   ];
 
   programs.fish.enable = true;
@@ -125,7 +135,14 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh = {
+    enable = true;
+    settings = {
+      PermitRootLogin = "no";
+      PasswordAuthentication = false;
+    };
+    openFirewall = true;
+  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
