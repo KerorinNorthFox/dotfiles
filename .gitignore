@@ -7,6 +7,8 @@
 !/archlinux
 !/nixos
 !/nixos/**
+!/nixos_wsl
+!/nixos_wsl/**
 
 !/ubuntu/.bash_logout
 !/ubuntu/.bashrc
