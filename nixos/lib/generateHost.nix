@@ -1,5 +1,7 @@
 {
   nixpkgs,
+  home-manager,
+  stateVersion,
 }:
 
 {
@@ -7,7 +9,6 @@
   system ? "x86_64-linux",
   username ? hostname,
   description ? "",
-  stateVersion ? "26.05",
 
   extraModules ? [ ],
   specialArgs ? { },
@@ -27,6 +28,22 @@ lib.nixosSystem {
   modules = [
     ../hosts/${hostname}/hardware-configuration.nix
     ../hosts/${hostname}/configuration.nix
+
+    home-manager.nixosModules.home-manager
+    {
+      networking.hostName = hostname;
+      system.stateVersion = stateVersion;
+
+      home-manager = {
+        useGlobalPkgs = true;
+        useUserPackages = true;
+
+        extraSpecialArgs = {
+          inherit stateVersion;
+        };
+        users.${username} = import ../home/${username}/home.nix;
+      };
+    }
   ]
   ++ extraModules;
 }
