@@ -6,6 +6,11 @@
 }:
 
 {
+  imports = [
+    ../../modules/shell/fish
+    ../../modules/terminal/zellij
+  ];
+
   home = {
     username = "kerorinnf";
     homeDirectory = "/home/kerorinnf";

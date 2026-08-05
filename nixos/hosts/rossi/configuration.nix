@@ -58,7 +58,6 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.shells = [ pkgs.fish ];
   environment.systemPackages = with pkgs; [
     vim
     wget
@@ -66,15 +65,12 @@
     delta
     btop
 
-    zellij
     eza
     bat
     fastfetch
     neovim
 
   ];
-
-  programs.fish.enable = true;
 
   programs.dconf.enable = true;
 
