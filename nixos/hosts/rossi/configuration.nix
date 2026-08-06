@@ -6,10 +6,10 @@
 
 {
   imports = [
-    ../../modules/common/console.nix
-    ../../modules/common/fonts.nix
-    ../../modules/common/locale.nix
-    ../../modules/common/openssh.nix
+    ../../modules/system/common/console.nix
+    ../../modules/system/common/fonts.nix
+    ../../modules/system/common/locale.nix
+    ../../modules/system/common/openssh.nix
   ];
 
   # Bootloader.

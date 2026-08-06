@@ -7,8 +7,8 @@
 
 {
   imports = [
-    ../../modules/shell/fish
-    ../../modules/terminal/zellij
+    ../../modules/user/shell/fish
+    ../../modules/user/terminal/zellij
   ];
 
   home = {
