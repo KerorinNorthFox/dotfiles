@@ -1,0 +1,3 @@
+{
+  programs.delta.enable = true;
+}
