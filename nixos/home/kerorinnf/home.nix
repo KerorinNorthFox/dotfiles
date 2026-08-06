@@ -7,6 +7,7 @@
 
 {
   imports = [
+    ../../modules/shell/fish
     ../../modules/terminal/zellij
   ];
 

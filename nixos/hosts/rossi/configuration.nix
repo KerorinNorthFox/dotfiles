@@ -10,8 +10,6 @@
     ../../modules/common/fonts.nix
     ../../modules/common/locale.nix
     ../../modules/common/openssh.nix
-
-    ../../modules/shell/fish
   ];
 
   # Bootloader.
@@ -34,6 +32,8 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+
+  programs.fish.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users."kerorinnf" = {
