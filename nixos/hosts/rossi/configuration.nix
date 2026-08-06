@@ -10,6 +10,8 @@
     ../../modules/common/fonts.nix
     ../../modules/common/locale.nix
     ../../modules/common/openssh.nix
+
+    ../../modules/shell/fish
   ];
 
   # Bootloader.
