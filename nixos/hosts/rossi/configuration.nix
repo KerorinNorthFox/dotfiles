@@ -6,6 +6,7 @@
 
 {
   imports = [
+    ../../modules/system/common/common.nix
     ../../modules/system/common/console.nix
     ../../modules/system/common/fonts.nix
     ../../modules/system/common/locale.nix
@@ -61,15 +62,11 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim
-    wget
-    git
     delta
     btop
 
     eza
     bat
-    fastfetch
     neovim
 
   ];
