@@ -35,6 +35,7 @@
   networking.networkmanager.enable = true;
 
   programs.fish.enable = true;
+  programs.nix-ld.enable = true; # Run unpatched dynamic binaries.
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users."kerorinnf" = {
