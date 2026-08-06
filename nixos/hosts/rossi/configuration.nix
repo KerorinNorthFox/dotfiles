@@ -68,7 +68,6 @@
 
     eza
     bat
-    neovim
 
   ];
 
