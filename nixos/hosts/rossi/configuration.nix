@@ -64,7 +64,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     delta
-    btop
 
     eza
     bat

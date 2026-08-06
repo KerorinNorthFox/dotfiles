@@ -9,6 +9,8 @@
   imports = [
     ../../modules/user/buildtool/make.nix
     ../../modules/user/editor/neovim
+    ../../modules/user/monitoring/bottom
+    ../../modules/user/monitoring/btop
     ../../modules/user/shell/fish
     ../../modules/user/terminal/zellij
   ];
