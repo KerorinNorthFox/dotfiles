@@ -7,6 +7,7 @@
 
 {
   imports = [
+    ../../modules/user/buildtool/make.nix
     ../../modules/user/shell/fish
     ../../modules/user/terminal/zellij
   ];
