@@ -26,7 +26,7 @@
       nixosConfigurations = {
         rossi = lib.generateHost {
           hostname = "rossi";
-          username = "kerorinnf";
+          usernames = [ "kerorinnf" ];
           description = "Virtual Box configuration.";
         };
       };

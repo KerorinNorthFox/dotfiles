@@ -7,7 +7,7 @@
 {
   hostname,
   system ? "x86_64-linux",
-  username ? hostname,
+  usernames ? [ hostname ],
   description ? "",
 
   extraModules ? [ ],
@@ -22,7 +22,7 @@ lib.nixosSystem {
   inherit system;
 
   specialArgs = specialArgs // {
-    inherit hostname username description;
+    inherit hostname usernames description;
   };
 
   modules = [
@@ -41,7 +41,12 @@ lib.nixosSystem {
         extraSpecialArgs = {
           inherit stateVersion;
         };
-        users.${username} = import ../home/${username}/home.nix;
+        users = builtins.listToAttrs (
+          map (user: {
+            name = user;
+            value = import ../home/${user}/home.nix;
+          }) usernames
+        );
       };
     }
   ]
