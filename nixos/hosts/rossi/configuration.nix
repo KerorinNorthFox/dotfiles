@@ -8,6 +8,7 @@
   imports = [
     ../../modules/system/common/common.nix
     ../../modules/system/common/console.nix
+    ../../modules/system/common/fcitx5.nix
     ../../modules/system/common/fonts.nix
     ../../modules/system/common/locale.nix
     ../../modules/system/common/openssh.nix
