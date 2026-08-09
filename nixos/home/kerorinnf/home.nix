@@ -17,7 +17,7 @@
     ../../modules/user/monitoring/bottom
     ../../modules/user/monitoring/btop
     ../../modules/user/shell/fish
-    ../../modules/user/terminal/foot/
+    ../../modules/user/terminal/foot
     ../../modules/user/terminal/zellij
   ];
 
