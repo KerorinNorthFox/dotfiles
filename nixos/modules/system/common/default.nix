@@ -1,5 +1,6 @@
 {
   imports = [
+    ./audio.nix
     ./common.nix
     ./console.nix
     ./fcitx5.nix
