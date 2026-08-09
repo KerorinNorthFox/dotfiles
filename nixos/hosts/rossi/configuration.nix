@@ -7,6 +7,8 @@
 {
   imports = [
     ../../modules/system/common
+
+    ../../modules/system/display-manager/sddm
   ];
 
   # Bootloader.
