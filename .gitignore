@@ -27,6 +27,8 @@
 !/default/.config/lazygit/config.yml
 !/default/.config/moe/
 !/default/.config/moe/**
+!/default/.config/niri/
+!/default/.config/niri/**
 !/default/.config/nvim/
 !/default/.config/nvim/**
 !/default/.config/nvim_old_setting/

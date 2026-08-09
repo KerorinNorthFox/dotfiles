@@ -1,0 +1,9 @@
+mod "Alt"
+
+spawn-at-startup "foot"
+
+binds {
+  Mod+Return { spawn "foot"; }
+  Mod+Q { close-window; }
+  Mod+Shift+E { quit; }
+}
