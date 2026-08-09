@@ -21,6 +21,7 @@ in
         kdePackages.qtmultimedia
       ];
       theme = "sddm-astronaut-theme";
+      wayland.enable = true;
     };
   };
 }
