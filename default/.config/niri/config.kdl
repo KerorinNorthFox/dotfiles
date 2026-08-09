@@ -1,4 +1,6 @@
-mod "Alt"
+input {
+  mod-key "Alt"
+}
 
 spawn-at-startup "foot"
 
