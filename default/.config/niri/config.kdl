@@ -1,4 +1,10 @@
 input {
+  keyboard {
+    xkb {
+      layout "jp"
+      model "jp106"
+    }
+  }
   mod-key "Alt"
 }
 

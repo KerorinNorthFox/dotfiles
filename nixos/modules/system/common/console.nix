@@ -3,6 +3,7 @@
 
   services.xserver.xkb = {
     layout = "jp";
+    model = "jp106";
     variant = "";
   };
 }
