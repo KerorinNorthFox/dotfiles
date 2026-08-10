@@ -27,12 +27,12 @@
   hardware.graphics.enable = true;
 
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/c1bc45c5-8cdc-44df-b69b-5dd14e13e208";
+    device = "/dev/disk/by-uuid/550811cc-5229-4201-8dac-7397c1463339";
     fsType = "ext4";
   };
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/3731-48AF";
+    device = "/dev/disk/by-uuid/21BE-EF15";
     fsType = "vfat";
     options = [
       "fmask=0077"
