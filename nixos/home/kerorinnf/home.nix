@@ -7,6 +7,7 @@
 
 {
   imports = [
+    ../../modules/user/browser/vivaldi
     ../../modules/user/buildtool/make.nix
     ../../modules/user/cli/bat
     ../../modules/user/cli/delta
