@@ -19,6 +19,7 @@
     ../../modules/user/file-manager/yazi
     ../../modules/user/monitoring/bottom
     ../../modules/user/monitoring/btop
+    ../../modules/user/search/rofi
     ../../modules/user/shell/fish
     ../../modules/user/terminal/foot
     ../../modules/user/terminal/zellij
