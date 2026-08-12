@@ -21,6 +21,7 @@
     ../../modules/user/monitoring/btop
     ../../modules/user/search/rofi
     ../../modules/user/shell/fish
+    ../../modules/user/status-bar/waybar
     ../../modules/user/terminal/foot
     ../../modules/user/terminal/zellij
   ];
