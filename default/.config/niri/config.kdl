@@ -8,6 +8,7 @@ input {
   mod-key "Alt"
 }
 
+spawn-at-startup "waybar"
 spawn-at-startup "foot"
 
 binds {
@@ -16,4 +17,5 @@ binds {
   Mod+Shift+E { quit; }
   Mod+D { spawn "rofi" "-show" "drun"; }
   Mod+W { spawn "rofi" "-show" "window"; }
+  Mod+N { spawn "swaync-client" "-t" "-swb"; }
 }
