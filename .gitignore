@@ -33,6 +33,8 @@
 !/default/.config/nvim/**
 !/default/.config/nvim_old_setting/
 !/default/.config/nvim_old_setting/**
+!/default/.config/rofi
+!/default/.config/rofi/**
 !/default/.config/yazi/
 !/default/.config/yazi/**
 !/default/.config/zellij/
