@@ -12,7 +12,7 @@
     ../../modules/user/buildtool/make.nix
     ../../modules/user/cli
     inputs.noctalia.homeModules.default
-    ../../modules/user/desktop-shell
+    ../../modules/user/desktop-shell/notcalia
     ../../modules/user/editor/neovim
     ../../modules/user/file-manager/dolphin
     ../../modules/user/file-manager/yazi
