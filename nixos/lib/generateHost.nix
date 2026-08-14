@@ -1,5 +1,6 @@
 {
   nixpkgs,
+  inputs,
   home-manager,
   stateVersion,
 }:
@@ -39,7 +40,7 @@ lib.nixosSystem {
         useUserPackages = true;
 
         extraSpecialArgs = {
-          inherit stateVersion;
+          inherit inputs stateVersion;
         };
         users = builtins.listToAttrs (
           map (user: {

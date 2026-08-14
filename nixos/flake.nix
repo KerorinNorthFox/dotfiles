@@ -7,6 +7,11 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    noctalia = {
+      url = "github:noctalia-dev/noctalia";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -19,7 +24,12 @@
     let
       stateVersion = "26.05";
       lib = import ./lib {
-        inherit nixpkgs home-manager stateVersion;
+        inherit
+          nixpkgs
+          inputs
+          home-manager
+          stateVersion
+          ;
       };
     in
     {
