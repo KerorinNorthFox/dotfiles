@@ -55,7 +55,7 @@
     "nix-command"
     "flakes"
   ];
-  nix.settings.auto-optimize-store = true;
+  nix.settings.auto-optimise-store = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
