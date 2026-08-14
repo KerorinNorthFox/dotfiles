@@ -19,6 +19,8 @@
 !/default/.config/
 !/default/.config/bottom/
 !/default/.config/bottom/**
+!/default/.config/fcitx5/
+!/default/.config/fcitx5/**
 !/default/.config/fish/
 !/default/.config/fish/**
 !/default/.config/inim/
