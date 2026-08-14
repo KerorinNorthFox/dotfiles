@@ -31,6 +31,8 @@
 !/default/.config/moe/**
 !/default/.config/niri/
 !/default/.config/niri/**
+!/default/.config/noctalia/
+!/default/.config/noctalia/**
 !/default/.config/nvim/
 !/default/.config/nvim/**
 !/default/.config/nvim_old_setting/
