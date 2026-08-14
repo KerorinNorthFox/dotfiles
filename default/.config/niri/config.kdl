@@ -8,7 +8,7 @@ input {
   mod-key "Alt"
 }
 
-spawn-at-startup "waybar"
+spawn-at-startup "noctalia"
 spawn-at-startup "foot"
 
 binds {
