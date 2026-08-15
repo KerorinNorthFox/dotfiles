@@ -1,0 +1,28 @@
+[shell]
+corner_radius_scale = 0.8
+font_family = "FiraMono Nerd Font Mono"
+
+[shell.animation]
+speed = 1.2
+
+[shell.panel]
+transparency_mode = "soft"
+wallpaper_placement = "floating"
+floating_offset = 24
+
+[shell.launcher]
+categories = false
+compact = true
+
+[bar.default]
+contact_shadow = true
+background_opacity = 0.6
+radius = 0
+margin_ends = 0
+concave_edge_corners = false
+scale = 0.8
+thickness = 28
+
+[widget.clock]
+format = "{:%m/%d} {:%H:%M} {:%A}"
+tooltip_format = "{:%H:%M:%S}"
