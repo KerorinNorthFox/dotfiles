@@ -28,6 +28,24 @@ margin_ends = 0
 concave_edge_corners = false
 scale = 0.8
 thickness = 28
+start = ["launcher", "active_window", "workspaces"]
+center = ["clock", "spacer", "group:keyboard", "privacy"]
+end = [
+  "volume",
+  "group:audio",
+  "notifications",
+  "clipboard",
+  "screenshot",
+  "wallpaper",
+  "network",
+  "bluetooth",
+  "brightness",
+  "cpu",
+  "ram",
+  "battery",
+  "control-center",
+  "group:power",
+]
 
 [[bar.default.capsule_group]]
 id = "audio"
