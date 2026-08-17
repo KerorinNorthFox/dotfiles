@@ -52,6 +52,9 @@ color_2 = "#fefefe"
 format = "{:%F} {:%R} {:%a}"
 tooltip_format = "{:%T}"
 
+[widget.lock_keys]
+display = "full"
+
 [widget.media]
 art_size = 24
 title_scroll = "on_hover"
