@@ -14,6 +14,12 @@ floating_offset = 24
 categories = false
 compact = true
 
+[keybinds]
+left = ["left", "alt+h"]
+right = ["right", "alt+l"]
+up = ["up", "alt+k"]
+down = ["down", "alt+j"]
+
 [bar.default]
 contact_shadow = true
 background_opacity = 0.6
