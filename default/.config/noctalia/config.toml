@@ -64,3 +64,6 @@ scroll_right = "next"
 scroll_left = "previous"
 scroll_up = "volume-up"
 scroll_down = "volume-down"
+
+[widget.privacy]
+hide_inactive = true
