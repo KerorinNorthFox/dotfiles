@@ -29,6 +29,12 @@ concave_edge_corners = false
 scale = 0.8
 thickness = 28
 
+[bar.default.dead_zone.actions]
+left = "panel-toggle launcher"
+middle = "exec foot"
+scroll_up = "volume-up"
+scroll_down = "volume-down"
+
 [widget.clock]
 format = "{:%m/%d} {:%H:%M} {:%A}"
 tooltip_format = "{:%H:%M:%S}"
