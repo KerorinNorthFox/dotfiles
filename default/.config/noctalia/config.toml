@@ -35,6 +35,12 @@ middle = "exec foot"
 scroll_up = "volume-up"
 scroll_down = "volume-down"
 
+[widget.active_window]
+min_length = 150
+max_length = 150
+title_scroll = "on_hover"
+show_empty_label = true
+
 [widget.clock]
 format = "{:%F} {:%R} {:%a}"
 tooltip_format = "{:%T}"
