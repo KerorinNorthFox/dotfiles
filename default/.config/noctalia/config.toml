@@ -67,3 +67,11 @@ scroll_down = "volume-down"
 
 [widget.privacy]
 hide_inactive = true
+
+[widget.cpu]
+type = "sysmon"
+stat = "cpu_usage"
+
+[widget.ram]
+type = "sysmon"
+stat = "ram_pct"
