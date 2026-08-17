@@ -36,5 +36,5 @@ scroll_up = "volume-up"
 scroll_down = "volume-down"
 
 [widget.clock]
-format = "{:%m/%d} {:%H:%M} {:%A}"
-tooltip_format = "{:%H:%M:%S}"
+format = "{:%F} {:%R} {:%a}"
+tooltip_format = "{:%T}"
