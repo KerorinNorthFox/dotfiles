@@ -41,6 +41,23 @@ max_length = 150
 title_scroll = "on_hover"
 show_empty_label = true
 
+[widget.audio_visualizer]
+bands = 32
+mirrored = false
+centered = false
+show_when_idle = true
+color_2 = "#fefefe"
+
 [widget.clock]
 format = "{:%F} {:%R} {:%a}"
 tooltip_format = "{:%T}"
+
+[widget.media]
+art_size = 24
+title_scroll = "on_hover"
+
+[widget.media.actions]
+scroll_right = "next"
+scroll_left = "previous"
+scroll_up = "volume-up"
+scroll_down = "volume-down"
