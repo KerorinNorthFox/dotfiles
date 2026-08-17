@@ -29,6 +29,24 @@ concave_edge_corners = false
 scale = 0.8
 thickness = 28
 
+[[bar.default.capsule_group]]
+id = "audio"
+members = ["audio_visualizer", "media"]
+padding = 16
+accordion = true
+
+[[bar.default.capsule_group]]
+id = "power"
+members = ["session", "caffeine"]
+fill = "#e27878"
+accordion = true
+accordion_direction = "start"
+
+[[bar.default.capsule_group]]
+id = "keyboard"
+members = ["lock_keys", "tray"]
+padding = 8
+
 [bar.default.dead_zone.actions]
 left = "panel-toggle launcher"
 middle = "exec foot"
