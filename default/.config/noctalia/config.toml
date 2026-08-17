@@ -87,6 +87,7 @@ color_2 = "#fefefe"
 [widget.clock]
 format = "{:%F} {:%R} {:%a}"
 tooltip_format = "{:%T}"
+anchor = true
 
 [widget.lock_keys]
 display = "full"
