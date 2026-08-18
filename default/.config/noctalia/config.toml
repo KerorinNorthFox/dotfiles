@@ -9,6 +9,8 @@ speed = 1.2
 transparency_mode = "soft"
 wallpaper_placement = "floating"
 floating_offset = 24
+open_near_click_control_center = true
+open_near_click_session = true
 
 [shell.launcher]
 categories = false
