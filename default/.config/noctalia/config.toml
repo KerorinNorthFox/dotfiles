@@ -36,14 +36,13 @@ end = [
   "notifications",
   "clipboard",
   "screenshot",
-  "wallpaper",
   "network",
   "bluetooth",
   "brightness",
   "cpu",
   "ram",
   "battery",
-  "control-center",
+  "group:design",
   "group:power",
 ]
 
@@ -64,6 +63,12 @@ accordion_direction = "start"
 id = "keyboard"
 members = ["lock_keys", "tray", "volume_input"]
 padding = 8
+
+[[bar.default.capsule_group]]
+id = "design"
+members = ["control-center", "theme_mode", "wallpaper"]
+accordion = true
+accordion_direction = "start"
 
 [bar.default.dead_zone.actions]
 left = "panel-toggle launcher"
