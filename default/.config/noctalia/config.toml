@@ -28,7 +28,7 @@ margin_ends = 0
 concave_edge_corners = false
 scale = 0.8
 thickness = 28
-start = ["launcher", "active_window", "workspaces"]
+start = ["launcher", "workspaces", "active_window", "taskbar"]
 center = ["clock", "spacer", "group:keyboard", "privacy"]
 end = [
   "volume",
@@ -112,3 +112,7 @@ stat = "cpu_usage"
 [widget.ram]
 type = "sysmon"
 stat = "ram_pct"
+
+[widget.taskbar]
+only_active_workspace = true
+inactive_opacity = 0.75
