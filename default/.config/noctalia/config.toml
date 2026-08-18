@@ -31,7 +31,7 @@ thickness = 28
 start = ["launcher", "workspaces", "active_window", "taskbar"]
 center = ["clock", "spacer", "group:keyboard", "privacy"]
 end = [
-  "volume",
+  "volume_output",
   "group:audio",
   "notifications",
   "clipboard",
@@ -62,7 +62,7 @@ accordion_direction = "start"
 
 [[bar.default.capsule_group]]
 id = "keyboard"
-members = ["lock_keys", "tray"]
+members = ["lock_keys", "tray", "volume_input"]
 padding = 8
 
 [bar.default.dead_zone.actions]
@@ -116,3 +116,11 @@ stat = "ram_pct"
 [widget.taskbar]
 only_active_workspace = true
 inactive_opacity = 0.75
+
+[widget.volume_input]
+type = "volume"
+device = "input"
+
+[widget.volume_output]
+type = "volume"
+device = "output"
