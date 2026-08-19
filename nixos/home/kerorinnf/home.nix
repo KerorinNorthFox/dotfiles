@@ -29,7 +29,7 @@
     homeDirectory = "/home/kerorinnf";
 
     file = {
-      "avatar.png".source = "../../assets/kerorinnf/avatar.png";
+      "avatar.png".source = ../../assets/kerorinnf/avatar.png;
     };
 
     inherit stateVersion;
