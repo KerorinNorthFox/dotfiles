@@ -28,6 +28,10 @@
     username = "kerorinnf";
     homeDirectory = "/home/kerorinnf";
 
+    file = {
+      "avatar.png".source = "../../assets/kerorinnf/avatar.png";
+    };
+
     inherit stateVersion;
 
     packages = with pkgs; [

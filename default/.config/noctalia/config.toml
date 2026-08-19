@@ -1,6 +1,7 @@
 [shell]
 corner_radius_scale = 0.8
 font_family = "FiraMono Nerd Font Mono"
+avatar_path = "~/avatar.png"
 
 [shell.animation]
 speed = 1.2
