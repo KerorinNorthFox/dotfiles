@@ -132,3 +132,9 @@ device = "input"
 [widget.volume_output]
 type = "volume"
 device = "output"
+
+[control_center]
+sidebar = "full"
+
+[control_center.calendar]
+event_date_format = "%B %e日  %A"
