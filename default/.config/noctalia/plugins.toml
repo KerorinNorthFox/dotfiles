@@ -1,2 +1,5 @@
 [plugins]
-enabled = ["noctalia/kaomoji", "noctalia/timer"]
+enabled = ["noctalia/kaomoji", "noctalia/timer", "noctalia/wallhaven"]
+
+[plugin_settings."noctalia/wallhaven"]
+download_dir = "~/Wallpapers/wallhaven"

@@ -47,7 +47,12 @@ opacity = 0.6
 
 [[bar.default.capsule_group]]
 id = "design"
-members = ["control-center", "theme_mode", "wallpaper"]
+members = [
+  "control-center",
+  "theme_mode",
+  "noctalia/wallhaven:wallhaven",
+  "wallpaper",
+]
 accordion = true
 accordion_direction = "start"
 
