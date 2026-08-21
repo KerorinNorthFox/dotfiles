@@ -10,7 +10,7 @@ avatar_path = "~/avatar.png"
 speed = 1.2
 
 [shell.panel]
-transparency_mode = "soft"
+transparency_mode = "glass"
 wallpaper_placement = "floating"
 floating_offset = 24
 open_near_click_control_center = true
