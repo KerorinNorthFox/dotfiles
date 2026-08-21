@@ -1,0 +1,58 @@
+[bar.default]
+contact_shadow = true
+background_opacity = 0.4
+radius = 0
+margin_ends = 0
+concave_edge_corners = false
+scale = 0.8
+thickness = 28
+capsule_opacity = 0.6
+start = ["launcher", "workspaces", "active_window", "taskbar"]
+center = ["clock", "spacer", "group:keyboard", "privacy"]
+end = [
+  "volume_output",
+  "group:audio",
+  "notifications",
+  "clipboard",
+  "screenshot",
+  "network",
+  "bluetooth",
+  "brightness",
+  "cpu",
+  "ram",
+  "battery",
+  "group:design",
+  "group:power",
+]
+
+[[bar.default.capsule_group]]
+id = "audio"
+members = ["audio_visualizer", "media"]
+padding = 16
+opacity = 0.6
+accordion = true
+
+[[bar.default.capsule_group]]
+id = "power"
+members = ["session", "caffeine"]
+fill = "#e27878"
+accordion = true
+accordion_direction = "start"
+
+[[bar.default.capsule_group]]
+id = "keyboard"
+members = ["lock_keys", "tray", "volume_input"]
+padding = 8
+opacity = 0.6
+
+[[bar.default.capsule_group]]
+id = "design"
+members = ["control-center", "theme_mode", "wallpaper"]
+accordion = true
+accordion_direction = "start"
+
+[bar.default.dead_zone.actions]
+left = "panel-toggle launcher"
+middle = "exec foot"
+scroll_up = "volume-up"
+scroll_down = "volume-down"

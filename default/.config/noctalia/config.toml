@@ -1,3 +1,6 @@
+[include]
+files = ["widgets/"]
+
 [shell]
 corner_radius_scale = 0.8
 font_family = "FiraMono Nerd Font Mono"
@@ -23,140 +26,11 @@ right = ["right", "alt+l"]
 up = ["up", "alt+k"]
 down = ["down", "alt+j"]
 
-[bar.default]
-contact_shadow = true
-background_opacity = 0.4
-radius = 0
-margin_ends = 0
-concave_edge_corners = false
-scale = 0.8
-thickness = 28
-capsule_opacity = 0.6
-start = ["launcher", "workspaces", "active_window", "taskbar"]
-center = ["clock", "spacer", "group:keyboard", "privacy"]
-end = [
-  "volume_output",
-  "group:audio",
-  "notifications",
-  "clipboard",
-  "screenshot",
-  "network",
-  "bluetooth",
-  "brightness",
-  "cpu",
-  "ram",
-  "battery",
-  "group:design",
-  "group:power",
-]
-
-[[bar.default.capsule_group]]
-id = "audio"
-members = ["audio_visualizer", "media"]
-padding = 16
-opacity = 0.6
-accordion = true
-
-[[bar.default.capsule_group]]
-id = "power"
-members = ["session", "caffeine"]
-fill = "#e27878"
-accordion = true
-accordion_direction = "start"
-
-[[bar.default.capsule_group]]
-id = "keyboard"
-members = ["lock_keys", "tray", "volume_input"]
-padding = 8
-opacity = 0.6
-
-[[bar.default.capsule_group]]
-id = "design"
-members = ["control-center", "theme_mode", "wallpaper"]
-accordion = true
-accordion_direction = "start"
-
-[bar.default.dead_zone.actions]
-left = "panel-toggle launcher"
-middle = "exec foot"
-scroll_up = "volume-up"
-scroll_down = "volume-down"
-
-[widget.active_window]
-min_length = 150
-max_length = 150
-title_scroll = "on_hover"
-show_empty_label = true
-capsule = true
-
-[widget.audio_visualizer]
-bands = 32
-mirrored = false
-centered = false
-show_when_idle = true
-color_2 = "#fefefe"
-
-[widget.clock]
-format = "{:%F} {:%R} {:%a}"
-tooltip_format = "{:%T}"
-anchor = true
-
-[widget.lock_keys]
-display = "full"
-
-[widget.media]
-art_size = 24
-title_scroll = "on_hover"
-
-[widget.media.actions]
-scroll_right = "next"
-scroll_left = "previous"
-scroll_up = "volume-up"
-scroll_down = "volume-down"
-
-[widget.privacy]
-hide_inactive = true
-
-[widget.cpu]
-type = "sysmon"
-stat = "cpu_usage"
-
-[widget.ram]
-type = "sysmon"
-stat = "ram_pct"
-
-[widget.taskbar]
-only_active_workspace = true
-inactive_opacity = 0.75
-
-[widget.volume_input]
-type = "volume"
-device = "input"
-
-[widget.volume_output]
-type = "volume"
-device = "output"
-
 [control_center]
 sidebar = "full"
 
 [control_center.calendar]
 event_date_format = "%B %e日  %A"
-
-[wallpaper]
-fill_mode = "crop"
-transition = ["fade"]
-directory = "~/Wallpapers"
-per_monitor_directories = true
-
-[backdrop]
-enabled = true
-blur_intensity = 0.5
-tint_intensity = 0.3
-
-[theme.templates]
-enable_buildin_templates = true
-builtin_ids = ["foot"]
 
 [location]
 auto_locate = true
