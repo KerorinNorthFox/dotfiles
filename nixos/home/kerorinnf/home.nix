@@ -14,6 +14,7 @@
     inputs.noctalia.homeModules.default
     ../../modules/user/desktop-shell/notcalia
     ../../modules/user/editor/neovim
+    ../../modules/user/editor/video/losslesscut
     ../../modules/user/file-manager/dolphin
     ../../modules/user/file-manager/yazi
     ../../modules/user/monitoring/bottom
@@ -22,6 +23,8 @@
     ../../modules/user/shell/fish
     ../../modules/user/terminal/foot
     ../../modules/user/terminal/zellij
+    ../../modules/user/viewer/image
+    ../../modules/user/viewer/video
   ];
 
   home = {
