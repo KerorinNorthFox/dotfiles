@@ -158,5 +158,8 @@ tint_intensity = 0.3
 enable_buildin_templates = true
 builtin_ids = ["foot"]
 
+[location]
+auto_locate = true
+
 [notification]
 background_opacity = 0.6
