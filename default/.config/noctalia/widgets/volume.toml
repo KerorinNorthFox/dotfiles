@@ -1,0 +1,7 @@
+[widget.volume_input]
+type = "volume"
+device = "input"
+
+[widget.volume_output]
+type = "volume"
+device = "output"

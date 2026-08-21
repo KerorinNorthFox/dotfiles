@@ -1,0 +1,6 @@
+[widget.active_window]
+min_length = 150
+max_length = 150
+title_scroll = "on_hover"
+show_empty_label = true
+capsule = true

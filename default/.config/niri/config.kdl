@@ -19,3 +19,8 @@ binds {
   Mod+W { spawn "rofi" "-show" "window"; }
   Mod+N { spawn "swaync-client" "-t" "-swb"; }
 }
+
+layer-rule {
+  match namespace="^noctalia-backdrop"
+  place-within-backdrop true
+}

@@ -1,0 +1,4 @@
+[widget.clock]
+format = "{:%F} {:%R} {:%a}"
+tooltip_format = "{:%T}"
+anchor = true
