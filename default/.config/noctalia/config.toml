@@ -157,3 +157,6 @@ tint_intensity = 0.3
 [theme.templates]
 enable_buildin_templates = true
 builtin_ids = ["foot"]
+
+[notification]
+background_opacity = 0.6
