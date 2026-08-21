@@ -2,6 +2,12 @@
 type = "volume"
 device = "input"
 
+[widget.volume_input.actions]
+left = "panel-toggle blackbartblues/audio-switcher:audio-switcher"
+
 [widget.volume_output]
 type = "volume"
 device = "output"
+
+[widget.volume_output.actions]
+left = "panel-toggle blackbartblues/audio-switcher:audio-switcher"
