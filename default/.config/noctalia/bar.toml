@@ -8,7 +8,7 @@ scale = 0.8
 thickness = 28
 capsule_opacity = 0.6
 start = ["launcher", "workspaces", "active_window", "taskbar"]
-center = ["clock", "spacer", "group:keyboard", "privacy"]
+center = ["clock", "spacer", "group:keyboard", "privacy", "noctalia/timer:bar"]
 end = [
   "volume_output",
   "group:audio",

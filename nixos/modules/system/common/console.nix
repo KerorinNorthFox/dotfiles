@@ -1,4 +1,9 @@
 {
+  pkgs,
+  ...
+}:
+
+{
   console.keyMap = "jp106";
 
   services.xserver.xkb = {
@@ -6,4 +11,8 @@
     model = "jp106";
     variant = "";
   };
+
+  environment.systemPackages = with pkgs; [
+    evtest
+  ];
 }
