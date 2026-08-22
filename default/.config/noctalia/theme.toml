@@ -8,7 +8,3 @@ per_monitor_directories = true
 enabled = true
 blur_intensity = 0.5
 tint_intensity = 0.3
-
-[theme.templates]
-enable_buildin_templates = true
-builtin_ids = ["foot"]
