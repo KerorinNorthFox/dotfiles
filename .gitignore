@@ -23,6 +23,8 @@
 !/default/.config/fcitx5/**
 !/default/.config/fish/
 !/default/.config/fish/**
+!/default/.config/foot/
+!/default/.config/foot/**
 !/default/.config/inim/
 !/default/.config/inim/inim.ini
 !/default/.config/lazygit/
