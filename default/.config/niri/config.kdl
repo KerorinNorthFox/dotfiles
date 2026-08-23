@@ -1,3 +1,5 @@
+include "startup.kdl"
+
 input {
   keyboard {
     xkb {
