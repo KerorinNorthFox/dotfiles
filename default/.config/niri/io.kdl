@@ -1,0 +1,25 @@
+input {
+  keyboard {
+    xkb {
+      layout "jp"
+      model "jp106"
+    }
+    numlock
+  }
+  touchpad {
+    tap
+    dwt
+    drag true
+    natural-scroll
+    scroll-method "two-finger"
+    middle-emulation // 左右クリック同時押しで中クリックをエミュレート.
+  }
+  
+  mod-key "Alt"
+}
+
+output "Virtual-1" {
+  scale 0.9
+  position x=0 y=0
+  variable-refresh-rate
+}

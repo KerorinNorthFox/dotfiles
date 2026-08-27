@@ -1,13 +1,7 @@
+include "io.kdl"
 include "startup.kdl"
 
-input {
-  keyboard {
-    xkb {
-      layout "jp"
-      model "jp106"
-    }
   }
-  mod-key "Alt"
 }
 
 spawn-at-startup "noctalia"
