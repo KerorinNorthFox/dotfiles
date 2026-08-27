@@ -3,12 +3,6 @@ include "io.kdl"
 include "rule.kdl"
 include "startup.kdl"
 
-gestures {
-  dnd-edge-view-scroll {
-    trigger-width 100
-  }
-}
-
 layout {
   gaps 8
   always-center-single-column
@@ -20,6 +14,16 @@ layout {
 blur {
   offset 2
   saturation 2
+}
+
+hotkey-overlay {
+  skip-at-startup
+}
+
+gestures {
+  dnd-edge-view-scroll {
+    trigger-width 100
+  }
 }
 
 debug {
