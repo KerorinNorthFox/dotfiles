@@ -3,15 +3,25 @@ include "io.kdl"
 include "rule.kdl"
 include "startup.kdl"
 
+gestures {
+  dnd-edge-view-scroll {
+    trigger-width 100
   }
 }
 
-spawn-at-startup "noctalia"
-spawn-at-startup "foot"
+layout {
+  gaps 8
+  always-center-single-column
+  default-column-width { 
+    proportion 0.5;
+  }
 }
 
 blur {
   offset 2
   saturation 2
 }
+
+debug {
+  honor-xdg-activation-with-invalid-serial
 }
