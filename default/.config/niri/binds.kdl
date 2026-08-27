@@ -1,8 +1,96 @@
 binds {
-  Mod+Return { spawn "foot"; }
+  // Basic
   Mod+Q { close-window; }
+  Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
+  Mod+Ctrl+Space { toggle-overview; }
   Mod+Shift+E { quit; }
-  Mod+D { spawn "rofi" "-show" "drun"; }
-  Mod+W { spawn "rofi" "-show" "window"; }
-  Mod+N { spawn "swaync-client" "-t" "-swb"; }
-}
+  Mod+Shift+Slash { show-hotkey-overlay; }
+  Super+Shift+Escape { toggle-keyboard-shortcuts-inhibit;}
+  Mod+Escape { spawn-sh "noctalia msg session lock"; }
+
+  // Screenshot
+  Super+Shift+S { spawn-sh "noctalia msg screenshot-region"; }
+  SUper+Shift+Ctrl+S { spawn-sh "noctalia msg screenshot-fullscreen"; }
+  Mod+Shift+S { screenshot; }
+  Mod+Shift+Ctrl+S { screenshot-screen; }
+
+  // Volume
+  Mod+O { spawn-sh "noctalia msg volume-down 5"; }
+  Mod+P { spawn-sh "noctalia msg volume-up 5"; }
+
+  // Spawn app
+  Mod+T { spawn "foot"; }
+  Mod+Return { spawn "foot" "--app-id" "float";}
+  Mod+D { spawn "dolphin"; }
+
+  ////
+  //// Focus
+  ////
+  // between window
+  Mod+H { focus-column-left; }
+  Mod+L { focus-column-right; }
+  Mod+J { focus-window-down; }
+  Mod+K { focus-window-up; }
+  // between monitor
+  Mod+Shift+H { focus-monitor-left; }
+  Mod+Shift+L { focus-monitor-right; }
+  Mod+Shift+J { focus-monitor-down; }
+  Mod+Shift+K { focus-monitor-up; }
+  // between workspace
+  Mod+U { focus-workspace-up; }
+  MOd+I { focus-workspace-down; }
+  Mod+1 { focus-workspace 1;}
+  Mod+2 { focus-workspace 2;}
+  Mod+3 { focus-workspace 3;}
+  Mod+4 { focus-workspace 4;}
+
+  ////
+  //// Move
+  //// NOTE: 'Ctrl' means moving. 
+  ////
+  // between window
+  Mod+Ctrl+H { move-column-left; }
+  Mod+Ctrl+L { move-column-right; }
+  Mod+Ctrl+J { move-window-down; }
+  Mod+Ctrl+K { move-window-up; }
+  Mod+Ctrl+BracketLeft { consume-or-expel-window-left; }
+  Mod+Ctrl+BracketRight { consume-or-expel-window-right; }
+  // between monitor
+  Mod+Ctrl+Shift+H { move-window-to-monitor-left; }
+  Mod+Ctrl+Shift+L { move-window-to-monitor-right; }
+  Mod+Ctrl+Shift+J { move-window-to-monitor-down; }
+  Mod+Ctrl+Shift+K { move-window-to-monitor-up; }
+  // between workspace
+  Mod+Ctrl+U { move-window-to-workspace-up; }
+  Mod+Ctrl+I { move-window-to-workspace-down; }
+  Mod+Ctrl+1 { move-window-to-workspace 1;}
+  Mod+Ctrl+2 { move-window-to-workspace 2;}
+  Mod+Ctrl+3 { move-window-to-workspace 3;}
+  Mod+Ctrl+4 { move-window-to-workspace 4;}
+  // workspace itself
+  Mod+Shift+U { move-workspace-up; }
+  Mod+Shift+I { move-workspace-down; }
+
+  ////
+  //// Window manipulation
+  ////
+  Mod+C { center-column; }
+  Mod+M { maximize-column; }
+  Mod+Shift+M { maximize-window-to-edges; }
+  Mod+F { toggle-window-floating; }
+  Mod+Shift+F { switch-focus-between-floating-and-tiling; }
+  Mod+Ctrl+F { fullscreen-window; }
+  // Resize
+  Mod+Right { set-column-width "+10%"; }
+  Mod+Left { set-column-width "-10%"; }
+  Mod+Shift+Right { set-column-width "+1%"; }
+  Mod+Shift+Left { set-column-width "-1%"; }
+  Mod+Up { set-window-height "+10%"; }
+  Mod+Down { set-window-height "-10%"; }
+  Mod+Shift+Up { set-window-height "+1%"; }
+  Mod+Shift+Down { set-window-height "-1%"; }
+  Mod+R { set-column-width "50%"; }
+  Mod+Shift+R { reset-window-height; }
+
+  Mod+Shift+T { toggle-column-tabbed-display; }
+  }
