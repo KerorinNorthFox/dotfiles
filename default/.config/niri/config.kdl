@@ -29,4 +29,13 @@ layer-rule {
 
 window-rule {
   draw-border-with-background false
+  background-effect {
+    blur true
+  }
+}
+
+blur {
+  offset 2
+  saturation 2
+}
 }
