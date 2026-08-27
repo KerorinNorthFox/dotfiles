@@ -1,4 +1,5 @@
 include "io.kdl"
+include "rule.kdl"
 include "startup.kdl"
 
   }
@@ -14,18 +15,6 @@ binds {
   Mod+D { spawn "rofi" "-show" "drun"; }
   Mod+W { spawn "rofi" "-show" "window"; }
   Mod+N { spawn "swaync-client" "-t" "-swb"; }
-}
-
-layer-rule {
-  match namespace="^noctalia-backdrop"
-  place-within-backdrop true
-}
-
-window-rule {
-  draw-border-with-background false
-  background-effect {
-    blur true
-  }
 }
 
 blur {
