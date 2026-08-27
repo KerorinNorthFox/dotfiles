@@ -10,6 +10,17 @@ window-rule {
   }
 }
 
+window-rule {
+  match is-floating=true
+
+  shadow {
+    on
+    softness 20
+    spread 3
+    offset x=0 y=0
+  }
+}
+
 // noctaliaの設定ウィンドウをフロートで表示.  
 window-rule {
   match app-id="dev.noctalia.Noctalia"
@@ -18,4 +29,12 @@ window-rule {
   default-window-height { fixed 920; }
 }
 
-
+window-rule {
+  match app-id="float"
+  open-floating true
+  default-column-width { fixed 1270; }
+  default-window-height { fixed 720; }
+  focus-ring {
+    off
+  }
+}
