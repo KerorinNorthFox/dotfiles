@@ -1,3 +1,4 @@
+include "binds.kdl"
 include "io.kdl"
 include "rule.kdl"
 include "startup.kdl"
@@ -7,14 +8,6 @@ include "startup.kdl"
 
 spawn-at-startup "noctalia"
 spawn-at-startup "foot"
-
-binds {
-  Mod+Return { spawn "foot"; }
-  Mod+Q { close-window; }
-  Mod+Shift+E { quit; }
-  Mod+D { spawn "rofi" "-show" "drun"; }
-  Mod+W { spawn "rofi" "-show" "window"; }
-  Mod+N { spawn "swaync-client" "-t" "-swb"; }
 }
 
 blur {

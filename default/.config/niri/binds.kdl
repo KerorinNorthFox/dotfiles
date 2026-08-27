@@ -1,0 +1,8 @@
+binds {
+  Mod+Return { spawn "foot"; }
+  Mod+Q { close-window; }
+  Mod+Shift+E { quit; }
+  Mod+D { spawn "rofi" "-show" "drun"; }
+  Mod+W { spawn "rofi" "-show" "window"; }
+  Mod+N { spawn "swaync-client" "-t" "-swb"; }
+}
