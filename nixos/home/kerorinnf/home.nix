@@ -11,6 +11,7 @@
     ../../modules/user/browser/vivaldi
     ../../modules/user/buildtool/make.nix
     ../../modules/user/cli
+    ../../modules/user/cursor/eku
     inputs.noctalia.homeModules.default
     ../../modules/user/desktop-shell/notcalia
     ../../modules/user/editor/neovim
