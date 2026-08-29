@@ -1,6 +1,6 @@
 {
   home = {
-    file = ".local/share/icons/Eku".source = "../../../../assets/cursors/Eku";
+    file = ".local/share/icons/Eku".source = ../../../../assets/cursors/Eku;
     
     pointerCursor = {
       enable = true;
