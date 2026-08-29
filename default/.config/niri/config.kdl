@@ -26,6 +26,11 @@ gestures {
   }
 }
 
+cursor {
+  xcursor-theme "Eku"
+  xcursor-size 16
+}
+
 debug {
   honor-xdg-activation-with-invalid-serial
 }
