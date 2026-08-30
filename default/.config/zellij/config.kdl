@@ -304,6 +304,13 @@ default_mode "locked"
 //   - false
 // 
 // pane_frames false
+
+////
+// New UI was added in v0.45.0,
+// but opt out it cuz preferring classic style.
+////
+pane_frame_style "full"
+stacked_pane_list false
  
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
