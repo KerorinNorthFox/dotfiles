@@ -1,11 +1,6 @@
 {
-  nixpkgs,
   inputs,
-  home-manager,
   stateVersion,
-}:
-
-{
   hostname,
   system ? "x86_64-linux",
   usernames ? [ hostname ],
@@ -16,7 +11,7 @@
 }:
 
 let
-  lib = nixpkgs.lib;
+  lib = inputs.nixpkgs.lib;
 in
 
 lib.nixosSystem {
@@ -30,7 +25,7 @@ lib.nixosSystem {
     ../hosts/${hostname}/hardware-configuration.nix
     ../hosts/${hostname}/configuration.nix
 
-    home-manager.nixosModules.home-manager
+    inputs.home-manager.nixosModules.home-manager
     {
       networking.hostName = hostname;
       system.stateVersion = stateVersion;

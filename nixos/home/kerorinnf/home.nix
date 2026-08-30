@@ -12,7 +12,6 @@
     ../../modules/user/buildtool/make.nix
     ../../modules/user/cli
     ../../modules/user/cursor/eku
-    inputs.noctalia.homeModules.default
     ../../modules/user/desktop-shell/notcalia
     ../../modules/user/editor/neovim
     ../../modules/user/editor/video/losslesscut
@@ -26,6 +25,8 @@
     ../../modules/user/terminal/zellij
     ../../modules/user/viewer/image
     ../../modules/user/viewer/video
+
+    inputs.noctalia.homeModules.default
   ];
 
   home = {
