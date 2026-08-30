@@ -4,7 +4,7 @@
 }:
 
 {
-  home.packages = {
+  home.packages = [
     pkgs.ani-cli
-  };
+  ];
 }
