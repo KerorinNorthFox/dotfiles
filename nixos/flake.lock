@@ -97,6 +97,7 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-stable": "nixpkgs-stable",
         "noctalia": "noctalia",
+        "yt-x": "yt-x"
       }
     },
     "systems": {
@@ -111,6 +112,27 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "yt-x": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1788091378,
+        "narHash": "sha256-iYvgk/TJ9Klh+W6uJ64lZBAjpC3qjgwDBvWgpBCW350=",
+        "owner": "Benexl",
+        "repo": "yt-x",
+        "rev": "7158aeaec1526d077e0d18784b1d575c7455a087",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Benexl",
+        "repo": "yt-x",
         "type": "github"
       }
     }
