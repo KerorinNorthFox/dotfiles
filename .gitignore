@@ -21,6 +21,7 @@
 !/default/.config/bottom/**
 !/default/.config/fcitx5/
 !/default/.config/fcitx5/**
+default/.config/fcitx5/conf/cached_layouts
 !/default/.config/fish/
 !/default/.config/fish/**
 !/default/.config/foot/
