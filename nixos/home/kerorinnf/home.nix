@@ -8,18 +8,18 @@
 
 {
   imports = [
-    ../../modules/user/browser/vivaldi
+    ../../modules/user/browser/vivaldi.nix
     ../../modules/user/buildtool/make.nix
     ../../modules/user/cli
     ../../modules/user/cursor/eku
     ../../modules/user/desktop-shell/notcalia
     ../../modules/user/editor/neovim
-    ../../modules/user/editor/video/losslesscut
+    ../../modules/user/editor/video/losslesscut.nix
     ../../modules/user/file-manager/dolphin
     ../../modules/user/file-manager/yazi
     ../../modules/user/monitoring/bottom
     ../../modules/user/monitoring/btop
-    ../../modules/user/notification/libnotify
+    ../../modules/user/notification/libnotify.nix
     ../../modules/user/shell/fish
     ../../modules/user/terminal/foot
     ../../modules/user/terminal/zellij
