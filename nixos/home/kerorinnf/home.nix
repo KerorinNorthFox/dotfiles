@@ -8,6 +8,7 @@
 
 {
   imports = [
+    ../../modules/user/browser/ani-cli.nix
     ../../modules/user/browser/vivaldi.nix
     ../../modules/user/buildtool/make.nix
     ../../modules/user/cli
