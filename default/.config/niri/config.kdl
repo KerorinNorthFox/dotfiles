@@ -5,7 +5,6 @@ include "startup.kdl"
 
 layout {
   gaps 8
-  always-center-single-column
   default-column-width { 
     proportion 0.5;
   }
