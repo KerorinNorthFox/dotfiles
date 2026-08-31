@@ -9,4 +9,5 @@
     wineWow64Packages.waylandFull
     winetricks
   ];
+  # exec "winetricks mfc42 cjkfonts".
 }
