@@ -20,6 +20,8 @@
     ../../modules/user/editor/video/losslesscut.nix
     ../../modules/user/file-manager/dolphin
     ../../modules/user/file-manager/yazi
+    ../../modules/user/gaming/dosbox.nix
+    ../../modules/user/gaming/wine
     ../../modules/user/monitoring/bottom
     ../../modules/user/monitoring/btop
     ../../modules/user/notification/libnotify.nix
