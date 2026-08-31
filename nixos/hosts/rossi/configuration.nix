@@ -9,6 +9,8 @@
     ../../modules/system/common
 
     ../../modules/system/display-manager/sddm
+    ../../modules/system/gaming/dosbox.nix
+    ../../modules/system/gaming/wine
     ../../modules/system/window-manager/niri
   ];
 

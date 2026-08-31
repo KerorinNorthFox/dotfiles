@@ -4,7 +4,7 @@
 }:
 
 {
-  home.packages = [
+  environment.systemPackages = [
     pkgs.dosbox
   ];
 }
