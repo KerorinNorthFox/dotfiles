@@ -28,8 +28,6 @@
     ../../modules/user/terminal/zellij
     ../../modules/user/viewer/image
     ../../modules/user/viewer/video
-
-    inputs.noctalia.homeModules.default
   ];
 
   home = {
