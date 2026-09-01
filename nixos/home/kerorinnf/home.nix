@@ -19,7 +19,6 @@
     ../../modules/user/editor/image/gimp.nix
     ../../modules/user/editor/image/krita.nix
     ../../modules/user/editor/music/kid3.nix
-    ../../modules/user/editor/pdf/masterpdfeditor.nix
     ../../modules/user/editor/video/losslesscut.nix
     ../../modules/user/file-manager/dolphin
     ../../modules/user/file-manager/yazi
