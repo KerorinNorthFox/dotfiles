@@ -8,6 +8,7 @@
 
 {
   imports = [
+    ../../modules/user/audio/qpwgraph.nix
     ../../modules/user/browser/ani-cli.nix
     ../../modules/user/browser/vivaldi.nix
     ../../modules/user/buildtool/make.nix
@@ -17,6 +18,8 @@
     ../../modules/user/editor/neovim
     ../../modules/user/editor/image/gimp.nix
     ../../modules/user/editor/image/krita.nix
+    ../../modules/user/editor/music/kid3.nix
+    ../../modules/user/editor/pdf/masterpdfeditor.nix
     ../../modules/user/editor/video/losslesscut.nix
     ../../modules/user/file-manager/dolphin
     ../../modules/user/file-manager/yazi
@@ -27,6 +30,7 @@
     ../../modules/user/terminal/foot
     ../../modules/user/terminal/zellij
     ../../modules/user/viewer/image
+    ../../modules/user/viewer/music
     ../../modules/user/viewer/video
   ];
 
