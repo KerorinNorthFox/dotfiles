@@ -4,7 +4,7 @@
 }:
 
 {
-  home.packagess = [
+  home.packages = [
     pkgs.qpwgraph
   ];
 }
