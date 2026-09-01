@@ -36,7 +36,7 @@ function compress
     
     set -l input $argv[1]
     set -l rate $argv[2]
-    set -l output "{$input}_compress_{$rate}.mp4"
+    set -l output (string join _ (path change-extension '' $input) "compress" "$rate.mp4")
 
     if type -q nvidia-smi
         echo "[INFO]:GPU is available for compress."
