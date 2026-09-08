@@ -8,5 +8,6 @@
     ./fonts.nix
     ./locale.nix
     ./openssh.nix
+    ./setting.nix
   ];
 }

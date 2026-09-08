@@ -32,11 +32,7 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
-  # Enable networking
-  networking.networkmanager.enable = true;
-
   programs.fish.enable = true;
-  programs.nix-ld.enable = true; # Run unpatched dynamic binaries.
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users."kerorinnf" = {
@@ -53,21 +49,12 @@
     shell = pkgs.fish;
   };
 
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
   nix.settings.auto-optimise-store = true;
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
   ];
-
-  programs.dconf.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
