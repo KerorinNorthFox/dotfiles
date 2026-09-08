@@ -29,12 +29,12 @@
     }@inputs:
     let
       stateVersion = "26.05";
-      lib = import ./lib;
+      lib = import ./lib { inherit inputs; };
     in
     {
       nixosConfigurations = {
         rossi = lib.generateHost {
-          inherit inputs stateVersion;
+          inherit stateVersion;
           hostname = "rossi";
           usernames = [ "kerorinnf" ];
           description = "Virtual Box configuration.";
