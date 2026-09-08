@@ -37,6 +37,13 @@
     in
     {
       nixosConfigurations = {
+        # Desktop host.
+        hibiki = lib.generateHost {
+          inherit stateVersion;
+          hostname = "hibiki";
+          usernames = [ "kerorinnf" ];
+          description = "Desktop configuration."
+        };
         rossi = lib.generateHost {
           inherit stateVersion;
           hostname = "rossi";
