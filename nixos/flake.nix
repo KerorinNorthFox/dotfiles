@@ -44,6 +44,14 @@
           usernames = [ "kerorinnf" ];
           description = "Desktop configuration."
         };
+        # Laptop host.
+        mari = lib.generateHost {
+          inherit stateVersion;
+          hostname = "mari";
+          usernames = [ "kerorinnf" ];
+          description = "Laptop configuration.";
+        };
+        # Virtual Box host.
         rossi = lib.generateHost {
           inherit stateVersion;
           hostname = "rossi";
