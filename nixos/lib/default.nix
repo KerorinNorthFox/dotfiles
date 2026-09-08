@@ -21,7 +21,10 @@
       inherit system;
 
       specialArgs = specialArgs // {
-        inherit hostname usernames description;
+        inherit
+          inputs
+          system
+          ;
       };
 
       modules = [
@@ -38,7 +41,7 @@
             useUserPackages = true;
 
             extraSpecialArgs = {
-              inherit inputs stateVersion;
+              inherit inputs system stateVersion;
             };
             users = builtins.listToAttrs (
               map (user: {

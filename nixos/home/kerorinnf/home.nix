@@ -1,7 +1,8 @@
 {
   config,
-  inputs,
   pkgs,
+  inputs,
+  system,
   stateVersion,
   ...
 }:
@@ -44,7 +45,7 @@
     inherit stateVersion;
 
     packages = with pkgs; [
-      inputs.yt-x.packages."x86_64-linux".default
+      inputs.yt-x.packages.${system}.default
     ];
   };
 }
