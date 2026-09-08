@@ -42,7 +42,7 @@
           inherit stateVersion;
           hostname = "hibiki";
           usernames = [ "kerorinnf" ];
-          description = "Desktop configuration."
+          description = "Desktop configuration.";
         };
         # Laptop host.
         mari = lib.generateHost {
