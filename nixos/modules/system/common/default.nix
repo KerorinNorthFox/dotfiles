@@ -7,6 +7,7 @@
     ./fcitx5.nix
     ./fonts.nix
     ./locale.nix
+    ./network.nix
     ./openssh.nix
     ./setting.nix
   ];
