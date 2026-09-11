@@ -6,6 +6,10 @@
 
 {
   imports = [
+    ../../modules/system/boot/grub.nix
+    ../../modules/system/gc.nix
+    ../../modules/system/users/kerorinnf.nix
+
     ../../modules/system/common
 
     ../../modules/system/display-manager/sddm
@@ -16,15 +20,6 @@
 
   # Bootloader.
   # boot.loader.systemd-boot.enable = true;
-  boot.loader = {
-    grub = {
-      enable = true;
-      efiSupport = true;
-      device = "nodev";
-      useOSProber = true;
-    };
-    efi.canTouchEfiVariables = true;
-  };
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -32,29 +27,7 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
-  programs.fish.enable = true;
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users."kerorinnf" = {
-    isNormalUser = true;
-    description = "kerorinnf";
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-    ];
-    openssh.authorizedKeys.keys = [
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGUZf+ifLseJwNLyys+N1/5v/NJF2278WH1aWDAMn6Yy masat@masato_desktop"
-    ];
-    packages = with pkgs; [ ];
-    shell = pkgs.fish;
-  };
-
-  nix.settings.auto-optimise-store = true;
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 7d";
-  };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
