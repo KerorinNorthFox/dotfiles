@@ -1,3 +1,4 @@
 [widget.taskbar]
-only_active_workspace = true
 inactive_opacity = 0.75
+show_window_title = true
+window_title_max_width = 50
