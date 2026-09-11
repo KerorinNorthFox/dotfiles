@@ -1,7 +1,6 @@
 [plugins]
 enabled = [
   "noctalia/kaomoji",
-  "noctalia/timer",
   "noctalia/wallhaven",
   "blackbartblues/audio-switcher",
 ]
