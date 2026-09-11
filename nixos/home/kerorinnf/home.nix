@@ -21,6 +21,7 @@
     ../../modules/user/editor/neovim
     ../../modules/user/file-manager/dolphin
     ../../modules/user/file-manager/yazi
+    ../../modules/user/hyprlock.nix
     ../../modules/user/monitoring/bottom
     ../../modules/user/monitoring/btop
     ../../modules/user/noctalia
