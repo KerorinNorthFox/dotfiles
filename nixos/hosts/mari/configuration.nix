@@ -8,6 +8,7 @@
   imports = [
     ../../modules/system/boot/grub.nix
     ../../modules/system/gc.nix
+    ../../modules/system/laptop.nix
     ../../modules/system/users/kerorinnf.nix
 
     ../../modules/system/common
