@@ -4,6 +4,15 @@
 
 ---@type LazySpec
 return {
+  -- discord
+  {
+    "vyfor/cord.nvim",
+    opts = {
+      display = {
+        theme = "catppuccin",
+      },
+    },
+  },
   -- フォーマッタープラグイン
   {
     "stevearc/conform.nvim",
