@@ -6,7 +6,7 @@
 
 {
   imports = [
-    ../../modules/system/common/
+    ../../modules/system/common
 
     ../../modules/system/display-manager/sddm
     ../../modules/system/window-manager/niri
