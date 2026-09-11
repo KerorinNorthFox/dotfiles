@@ -26,6 +26,8 @@ default/.config/fcitx5/conf/cached_layouts
 !/default/.config/fish/**
 !/default/.config/foot/
 !/default/.config/foot/**
+!/default/.config/hypr/
+!/default/.config/hypr/**
 !/default/.config/inim/
 !/default/.config/inim/inim.ini
 !/default/.config/lazygit/
