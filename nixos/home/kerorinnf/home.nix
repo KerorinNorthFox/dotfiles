@@ -13,6 +13,7 @@
     ../../modules/user/buildtool/make.nix
     ../../modules/user/cli
     ../../modules/user/cursor/eku
+    ../../modules/user/discord.nix
     ../../modules/user/editor/gimp.nix
     ../../modules/user/editor/kid3.nix
     ../../modules/user/editor/krita.nix
@@ -24,6 +25,7 @@
     ../../modules/user/monitoring/btop
     ../../modules/user/noctalia
     ../../modules/user/notification/libnotify.nix
+    ../../modules/user/obs-studio
     ../../modules/user/qpwgraph.nix
     ../../modules/user/shell/fish
     ../../modules/user/terminal/foot
