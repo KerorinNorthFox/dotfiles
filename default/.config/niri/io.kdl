@@ -14,8 +14,6 @@ input {
     scroll-method "two-finger"
     middle-emulation // 左右クリック同時押しで中クリックをエミュレート.
   }
-  
-  mod-key "Alt"
 }
 
 output "Virtual-1" {
