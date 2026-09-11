@@ -8,4 +8,6 @@
     "nix-command"
     "flakes"
   ];
+
+  services.upower.enable = true;
 }
