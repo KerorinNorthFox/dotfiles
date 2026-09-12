@@ -58,7 +58,17 @@ window-rule {
   scroll-factor 0.25
 }
 
+// discord
 window-rule {
   match app-id="discord"
   scroll-factor 0.25
+}
+
+// dolphin
+window-rule {
+  match app-id="org.kde.dolphin"
+  opacity 0.95
+  background-effect {
+    blur true
+  }
 }
