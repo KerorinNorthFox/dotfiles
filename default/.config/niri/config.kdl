@@ -34,3 +34,7 @@ cursor {
 debug {
   honor-xdg-activation-with-invalid-serial
 }
+
+switch-events {
+  lid-close { spawn "hyprlock"; }
+}

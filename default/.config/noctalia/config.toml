@@ -20,6 +20,22 @@ open_near_click_session = true
 categories = false
 compact = true
 
+[[shell.session.actions]]
+action = "lock"
+command = "hyprlock"
+
+[[shell.session.actions]]
+action = "logout"
+
+[[shell.session.actions]]
+action = "lock_and_suspend"
+
+[[shell.session.actions]]
+action = "reboot"
+
+[[shell.session.actions]]
+action = "shutdown"
+
 [keybinds]
 left = ["left", "alt+h"]
 right = ["right", "alt+l"]
@@ -37,3 +53,6 @@ auto_locate = true
 
 [notification]
 background_opacity = 0.6
+
+[lockscreen]
+lock_before_suspend = false

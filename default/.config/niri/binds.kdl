@@ -6,7 +6,7 @@ binds {
   Mod+Shift+E { quit; }
   Mod+Shift+Slash { show-hotkey-overlay; }
   Super+Shift+Escape { toggle-keyboard-shortcuts-inhibit;}
-  Mod+Escape { spawn-sh "noctalia msg session lock"; }
+  Mod+Escape { spawn-sh "hyprlock"; }
   Mod+N { spawn-sh "noctalia msg panel-toggle control-center notifications"; }
 
   // Screenshot
