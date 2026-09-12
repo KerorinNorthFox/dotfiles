@@ -27,6 +27,15 @@ window-rule {
   }
 }
 
+// スクリーンキャプチャ中のウィンドウ枠を赤く表示.
+window-rule {
+  match is-window-cast-target=true
+  focus-ring {
+    active-color "#f38ba8"
+    inactive-color "#7d0d2d"
+  }
+}
+
 // noctaliaの設定ウィンドウをフロートで表示.  
 window-rule {
   match app-id="dev.noctalia.Noctalia"
