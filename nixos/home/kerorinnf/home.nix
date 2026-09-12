@@ -12,6 +12,7 @@
     ../../modules/user/ani-cli
     ../../modules/user/buildtool/make.nix
     ../../modules/user/cli
+    ../../modules/user/cli/lazygit
     ../../modules/user/cursor/eku
     ../../modules/user/discord.nix
     ../../modules/user/editor/gimp.nix
