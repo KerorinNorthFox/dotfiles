@@ -7,7 +7,7 @@ concave_edge_corners = false
 scale = 0.8
 thickness = 28
 capsule_opacity = 0.6
-start = ["launcher", "workspaces", "active_window", "taskbar"]
+start = ["launcher", "workspaces", "overview_taskbar", "workspace_taskbar"]
 center = ["clock", "spacer", "group:keyboard", "privacy"]
 end = [
   "volume_output",
