@@ -3,6 +3,7 @@ layer-rule {
   place-within-backdrop true
 }
 
+// default
 window-rule {
   draw-border-with-background false
   background-effect {
@@ -10,6 +11,7 @@ window-rule {
   }
 }
 
+// floating
 window-rule {
   match is-floating=true
 
@@ -33,9 +35,21 @@ window-rule {
   default-window-height { fixed 920; }
 }
 
+// foot terminalを720pのfloatモードで起動.
 window-rule {
   match app-id="float"
   open-floating true
   default-column-width { fixed 1270; }
   default-window-height { fixed 720; }
+}
+
+// vivaldi
+window-rule {
+  match app-id="vivaldi-stable"
+  scroll-factor 0.25
+}
+
+window-rule {
+  match app-id="discord"
+  scroll-factor 0.25
 }

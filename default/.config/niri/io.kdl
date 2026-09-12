@@ -11,7 +11,6 @@ input {
     dwt
     drag true
     natural-scroll
-    scroll-factor 0.2
     scroll-method "two-finger"
     middle-emulation // 左右クリック同時押しで中クリックをエミュレート.
   }
