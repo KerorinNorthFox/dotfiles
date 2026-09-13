@@ -53,8 +53,6 @@ default/.config/fcitx5/conf/cached_layouts
 !/default/.config/qimgv/**
 !/default/.config/rofi
 !/default/.config/rofi/**
-!/default/.config/yazi/
-!/default/.config/yazi/**
 !/default/.config/yt-x/
 !/default/.config/yt-x/**
 !/default/.config/zellij/

@@ -7,6 +7,9 @@
   ...
 }:
 
+let
+  username = "kerorinnf";
+in
 {
   imports = [
     ../../modules/user/ani-cli
@@ -21,7 +24,7 @@
     ../../modules/user/editor/losslesscut.nix
     ../../modules/user/editor/neovim
     ../../modules/user/file-manager/dolphin
-    ../../modules/user/file-manager/yazi
+    (import ../../modules/user/file-manager/yazi { })
     ../../modules/user/hyprlock.nix
     ../../modules/user/monitoring/bottom
     ../../modules/user/monitoring/btop
@@ -39,11 +42,11 @@
   ];
 
   home = {
-    username = "kerorinnf";
-    homeDirectory = "/home/kerorinnf";
+    inherit username;
+    homeDirectory = "/home/${username}";
 
     file = {
-      "avatar.png".source = ../../assets/kerorinnf/avatar.png;
+      "avatar.png".source = ../../assets/${username}/avatar.png;
     };
 
     inherit stateVersion;
