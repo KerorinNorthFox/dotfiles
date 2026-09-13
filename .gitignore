@@ -21,8 +21,6 @@
 !/default/.config/bottom/**
 !/default/.config/btop/
 !/default/.config/btop/**
-!/default/.config/cmus/
-!/default/.config/cmus/**
 !/default/.config/dolphinrc
 !/default/.config/fcitx5/
 !/default/.config/fcitx5/**
