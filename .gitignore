@@ -38,6 +38,8 @@ default/.config/fcitx5/conf/cached_layouts
 !/default/.config/kdeglobals
 !/default/.config/lazygit/
 !/default/.config/lazygit/config.yml
+!/defaut/.config/matugen/
+!/defaut/.config/matugen/**
 !/default/.config/mimeapps.list
 !/default/.config/moe/
 !/default/.config/moe/**

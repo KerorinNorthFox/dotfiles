@@ -19,5 +19,6 @@
     fx # json viewer
     imagemagick
     typos # find typo in file
+    matugen # color generation
   ];
 }
