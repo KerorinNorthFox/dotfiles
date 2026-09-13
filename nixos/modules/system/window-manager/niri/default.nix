@@ -4,6 +4,10 @@
 }:
 
 {
+  imports = [
+    ./nautilus.nix
+  ];
+
   programs.niri.enable = true;
 
   xdg.portal = {
