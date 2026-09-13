@@ -1,0 +1,18 @@
+[General]
+FilterBar=true
+ShowFullPathInTitlebar=true
+Version=202
+ViewPropsTimestamp=2026,9,11,11,47,43.453
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=imagethumbnail,ebookthumbnail,djvuthumbnail,comicbookthumbnail,svgthumbnail,appimagethumbnail,exrthumbnail,kraorathumbnail,cursorthumbnail,audiothumbnail,windowsimagethumbnail,directorythumbnail,jpegthumbnail,opendocumentthumbnail,windowsexethumbnail
+
+[UiSettings]
+ColorScheme=BreezeDark

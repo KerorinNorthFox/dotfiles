@@ -19,6 +19,11 @@
 !/default/.config/
 !/default/.config/bottom/
 !/default/.config/bottom/**
+!/default/.config/btop/
+!/default/.config/btop/**
+!/default/.config/cmus/
+!/default/.config/cmus/**
+!/default/.config/dolphinrc
 !/default/.config/fcitx5/
 !/default/.config/fcitx5/**
 default/.config/fcitx5/conf/cached_layouts
@@ -32,6 +37,7 @@ default/.config/fcitx5/conf/cached_layouts
 !/default/.config/inim/inim.ini
 !/default/.config/lazygit/
 !/default/.config/lazygit/config.yml
+!/default/.config/mimeapps.list
 !/default/.config/moe/
 !/default/.config/moe/**
 !/default/.config/niri/
@@ -42,10 +48,14 @@ default/.config/fcitx5/conf/cached_layouts
 !/default/.config/nvim/**
 !/default/.config/nvim_old_setting/
 !/default/.config/nvim_old_setting/**
+!/default/.config/qimgv/
+!/default/.config/qimgv/**
 !/default/.config/rofi
 !/default/.config/rofi/**
 !/default/.config/yazi/
 !/default/.config/yazi/**
+!/default/.config/yt-x/
+!/default/.config/yt-x/**
 !/default/.config/zellij/
 !/default/.config/zellij/**
 !/default/.config/wezterm/
