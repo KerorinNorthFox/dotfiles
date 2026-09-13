@@ -1,11 +1,14 @@
 [Added Associations]
 image/jpeg=qimgv.desktop;okularApplication_kimgio.desktop;feh.desktop;org.nomacs.ImageLounge.desktop;org.gnome.Shotwell-Viewer.desktop;gimp.desktop;krita_jpeg.desktop;
 image/png=qimgv.desktop;okularApplication_kimgio.desktop;feh.desktop;org.nomacs.ImageLounge.desktop;org.gnome.Shotwell-Viewer.desktop;gimp.desktop;krita_png.desktop;
+text/plain=nvim.desktop;vim.desktop;
 
 [Default Applications]
 image/jpeg=qimgv.desktop;
 image/png=qimgv.desktop;
+text/plain=nvim.desktop;
 
 [Removed Associations]
 image/jpeg=vivaldi-stable.desktop;org.kde.showfoto.desktop;
 image/png=vivaldi-stable.desktop;org.kde.showfoto.desktop;
+text/plain=okularApplication_txt.desktop;

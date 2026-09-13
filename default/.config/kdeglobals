@@ -1,0 +1,6 @@
+[General]
+TerminalApplication=foot
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=0

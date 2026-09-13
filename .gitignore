@@ -35,6 +35,7 @@ default/.config/fcitx5/conf/cached_layouts
 !/default/.config/hypr/**
 !/default/.config/inim/
 !/default/.config/inim/inim.ini
+!/default/.config/kdeglobals
 !/default/.config/lazygit/
 !/default/.config/lazygit/config.yml
 !/default/.config/mimeapps.list
