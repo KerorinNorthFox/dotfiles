@@ -1,3 +1,4 @@
 spawn-at-startup "noctalia"
+spawn-at-startup "fcitx5 -r -d"
 spawn-at-startup "swaync"
 spawn-at-startup "foot"
