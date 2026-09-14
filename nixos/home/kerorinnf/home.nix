@@ -16,6 +16,9 @@ in
     ../../modules/user/buildtool/make.nix
     ../../modules/user/cli
     ../../modules/user/cli/lazygit
+    ../../modules/user/cli/navi
+    ../../modules/user/cli/nix-tools.nix
+    ../../modules/user/cli/tealdeer
     ../../modules/user/cursor/eku
     ../../modules/user/discord.nix
     ../../modules/user/editor/gimp.nix
@@ -23,6 +26,7 @@ in
     ../../modules/user/editor/krita.nix
     ../../modules/user/editor/losslesscut.nix
     ../../modules/user/editor/neovim
+    ../../modules/user/ffmpeg.nix
     ../../modules/user/file-manager/dolphin
     (import ../../modules/user/file-manager/yazi { })
     ../../modules/user/hyprlock.nix
