@@ -57,6 +57,9 @@ end
 if type -q delta
     alias diff delta
 end
+if type -q fd
+    alias find fd
+end
 if type -q ~/.cargo/target/release/dup-img-remover
     alias dup-img-remover ~/.cargo/target/release/dup-img-remover
 end

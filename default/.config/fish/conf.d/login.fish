@@ -23,17 +23,17 @@ function fish_greeting
 
     _colored_print magenta "Command List:"
     _colored_print magenta "General:"
-    _print_help_if_exist z "- z     : Move dir you often use."
     _print_help_if_exist nixos-rebuild "- nixos-rebuild switch : "
-    _print_help_if_exist nix-env "- nix-env --list-generations --profiles /nix/var/nix/profiles/system : Show hisotry of previous nix environments versions."
+    _print_help_if_exist nix-env "- nix-env --list-generations --profile /nix/var/nix/profiles/system : Show hisotry of previous nix environments versions."
 
     _colored_print magenta "I/O:"
     _print_help_if_exist bat "- bat   : cat with syntax highlight."
     _print_help_if_exist wc "- wc -l : Display line count of file."
-    _print_help_if_exist df "- df -h : Display the disk size."
-    _print_help_if_exist du "- du -h : Display the dir size."
+    _print_help_if_exist duf "- duf : Display the disk size."
+    _print_help_if_exist dust "- dust : Display the dir size."
 
     _colored_print magenta "File / Dir Operation:"
+    _print_help_if_exist z "- z     : Move dir you often use."
     _print_help_if_exist y "- y     : Open yazi file manager and cd when quits."
 
     _colored_print magenta "Packages:"
