@@ -12,7 +12,7 @@ center = ["clock", "spacer", "group:keyboard", "privacy"]
 end = [
   "volume_output",
   "group:audio",
-  "notifications",
+  "swaync",
   "clipboard",
   "network",
   "bluetooth",

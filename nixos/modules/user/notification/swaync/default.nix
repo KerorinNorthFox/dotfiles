@@ -1,5 +1,10 @@
 {
-  services.swaync = {
-    enable = true;
-  };
+  pkgs,
+  ...
+}:
+
+{
+  home.packages = [
+    pkgs.swaynotificationcenter
+  ];
 }

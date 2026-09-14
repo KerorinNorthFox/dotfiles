@@ -30,6 +30,7 @@ in
     ../../modules/user/monitoring/btop
     ../../modules/user/noctalia
     ../../modules/user/notification/libnotify.nix
+    ../../modules/user/notification/swaync
     ../../modules/user/obs-studio
     ../../modules/user/qpwgraph.nix
     ../../modules/user/shell/fish

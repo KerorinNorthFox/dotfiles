@@ -44,6 +44,7 @@ down = ["down", "alt+j"]
 
 [control_center]
 sidebar = "full"
+hidden_tabs = ["notifications"] # swayncを使用.
 
 [control_center.calendar]
 event_date_format = "%B %e日  %A"
@@ -52,6 +53,7 @@ event_date_format = "%B %e日  %A"
 auto_locate = true
 
 [notification]
+enable_daemon = false    # swayncを使用.
 background_opacity = 0.6
 
 [lockscreen]

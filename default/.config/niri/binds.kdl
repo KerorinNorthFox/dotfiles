@@ -7,7 +7,7 @@ binds {
   Mod+Shift+Slash { show-hotkey-overlay; }
   Super+Shift+Escape { toggle-keyboard-shortcuts-inhibit;}
   Mod+Escape { spawn-sh "hyprlock"; }
-  Mod+N { spawn-sh "noctalia msg panel-toggle control-center notifications"; }
+  Mod+N { spawn-sh "swaync-client -t"; }
 
   // Screenshot
   Super+Shift+S { spawn-sh "noctalia msg screenshot-region"; }
