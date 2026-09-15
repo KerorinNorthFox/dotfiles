@@ -1,0 +1,11 @@
+// vivaldi
+window-rule {
+  match app-id="vivaldi-stable"
+  scroll-factor 0.25
+}
+
+// discord
+window-rule {
+  match app-id="discord"
+  scroll-factor 0.25
+}

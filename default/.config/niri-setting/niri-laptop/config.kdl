@@ -1,0 +1,42 @@
+include "../common/animation.kdl"
+include "../common/binds.kdl"
+include "../common/io.kdl"
+include "../common/rule.kdl"
+include "../common/startup.kdl"
+include "io.kdl"
+include "rule.kdl"
+
+layout {
+  gaps 8
+  default-column-width { 
+    proportion 0.5;
+  }
+}
+
+blur {
+  offset 2
+  saturation 2
+}
+
+hotkey-overlay {
+  skip-at-startup
+}
+
+gestures {
+  dnd-edge-view-scroll {
+    trigger-width 100
+  }
+}
+
+cursor {
+  xcursor-theme "Eku"
+  xcursor-size 16
+}
+
+debug {
+  honor-xdg-activation-with-invalid-serial
+}
+
+switch-events {
+  lid-close { spawn "hyprlock"; }
+}

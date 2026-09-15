@@ -1,0 +1,18 @@
+input {
+  mouse {
+    accel-speed -0.5
+  }
+}
+
+// Xiaomi Mi Monitor (Main)
+output "HDMI-A-1" {
+  mode "1920x1080@60.000"
+  position x=0 y=0
+  focus-at-startup
+}
+
+// IO-Data Monitor (Sub)
+output "DP-3" {
+  mode "1920x1080@59.934"
+  position x=-1920 y=0
+}
