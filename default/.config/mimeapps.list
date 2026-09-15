@@ -7,6 +7,7 @@ text/plain=nvim.desktop;vim.desktop;
 image/jpeg=qimgv.desktop;
 image/png=qimgv.desktop;
 text/plain=nvim.desktop;
+x-scheme-handler/discord=vesktop.desktop
 
 [Removed Associations]
 image/jpeg=vivaldi-stable.desktop;org.kde.showfoto.desktop;

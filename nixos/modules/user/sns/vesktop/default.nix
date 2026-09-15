@@ -2,7 +2,9 @@
   programs.vesktop = {
     enable = true;
     vencord = {
-      themes = [ "./themes/midnight.theme.css" ];
+      settings.enabledThemes = [ "./themes/midnight.theme.css" ];
     };
   };
+
+  xdg.configFile."vesktop/themes/midnight.theme.css".source = ./themes/midnight.theme.css;
 }
