@@ -20,7 +20,8 @@ in
     ../../modules/user/cli/nix-tools.nix
     ../../modules/user/cli/tealdeer
     ../../modules/user/cursor/eku
-    ../../modules/user/discord.nix
+    ../../modules/user/sns/discord.nix
+    ../../modules/user/sns/vesktop
     ../../modules/user/editor/gimp.nix
     ../../modules/user/editor/kid3.nix
     ../../modules/user/editor/krita.nix
