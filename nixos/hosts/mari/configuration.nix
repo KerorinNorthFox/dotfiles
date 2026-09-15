@@ -13,7 +13,7 @@
 
     ../../modules/system/common
 
-    (import ../../modules/system/display-manager/sddm { original_theme = "rossi_namie"; })
+    (import ../../modules/system/display-manager/sddm { original_theme = "suzuran_snow"; })
     ../../modules/system/gaming/dosbox.nix
     ../../modules/system/gaming/wine
     ../../modules/system/window-manager/niri
