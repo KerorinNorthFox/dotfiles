@@ -1,3 +1,15 @@
+input {
+  touchpad {
+    tap
+    dwt
+    drag true
+    natural-scroll
+    scroll-method "two-finger"
+    accel-speed 0.3
+    middle-emulation // 左右クリック同時押しで中クリックをエミュレート.
+  }
+}
+
 output "eDP-1" {
   position x=0 y=0
 }
