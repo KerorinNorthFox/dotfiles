@@ -13,8 +13,12 @@
     ../../modules/system/common
 
     (import ../../modules/system/display-manager/sddm { original_theme = "rossi_namie"; })
+    ../../modules/system/gaming/bottles.nix
     ../../modules/system/gaming/dosbox.nix
+    ../../modules/system/gaming/faugus.nix
+    ../../modules/system/gaming/lutris.nix
     ../../modules/system/gaming/steam.nix
+    ../../modules/system/gaming/tools.nix
     ../../modules/system/gaming/wine.nix
     ../../modules/system/window-manager/niri
   ];
