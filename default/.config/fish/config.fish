@@ -81,6 +81,10 @@ set -gx EDITOR vi
 set -x LESSCHARSET utf-8
 set -x LESS "-X -R"
 set -x LESSOPEN "| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+# dolphinにBreezeDarkテーマを設定すると一部の文字色がライトテーマのままなので
+# 環境変数でテーマを参照先をqt6ctに設定.
+# qt6ct側ではカラースキーマをdark系にしておく.
+set -x QT_QPA_PLATFORMTHEME qt6ct
 
 # if status is-interactive
 #     # Commands to run in interactive sessions can go here
