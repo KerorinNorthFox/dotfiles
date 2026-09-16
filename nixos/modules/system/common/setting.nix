@@ -10,4 +10,8 @@
   ];
 
   services.upower.enable = true;
+
+  systemd.settings.Manager = {
+    DefaultTimeoutStopSec = "10s";
+  };
 }
