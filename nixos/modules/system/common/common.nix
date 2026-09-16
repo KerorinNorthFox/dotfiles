@@ -13,5 +13,8 @@
     vim
     wget
     zip
+
+    usbutils
+    pciutils
   ];
 }
