@@ -6,6 +6,7 @@ input {
     }
     numlock
   }
+  warp-mouse-to-focus
 }
 
 output "Virtual-1" {
