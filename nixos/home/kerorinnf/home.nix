@@ -12,7 +12,6 @@ let
 in
 {
   imports = [
-    ../../modules/user/buildtool/make.nix
     ../../modules/user/cli/lazygit
     ../../modules/user/cli/navi
     ../../modules/user/cli/tealdeer
@@ -42,11 +41,8 @@ in
     ../../modules/user/viewer/music
     ../../modules/user/viewer/video
     ../../modules/user/vivaldi
-    ../../modules/user/ffmpeg.nix
     ../../modules/user/hyprlock.nix
     ../../modules/user/hyprpicker.nix
-    ../../modules/user/lan-mouse.nix
-    ../../modules/user/qpwgraph.nix
   ];
 
   home = {

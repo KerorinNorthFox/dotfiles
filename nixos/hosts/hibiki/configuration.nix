@@ -12,6 +12,7 @@
 
     ../../modules/system/common
 
+    ../../modules/system/buildtool/make.nix
     (import ../../modules/system/display-manager/sddm { original_theme = "rossi_namie"; })
     ../../modules/system/gaming/bottles.nix
     ../../modules/system/gaming/dosbox.nix
@@ -20,6 +21,9 @@
     ../../modules/system/gaming/steam.nix
     ../../modules/system/gaming/tools.nix
     ../../modules/system/gaming/wine.nix
+    ../../modules/system/tools/ffmpeg.nix
+    ../../modules/system/tools/lan-mouse.nix
+    ../../modules/system/tools/qpwgraph.nix
     ../../modules/system/window-manager/niri
   ];
 
