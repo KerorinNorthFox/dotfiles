@@ -9,6 +9,13 @@ window-rule {
   background-effect {
     blur true
   }
+  opacity 0.9
+}
+
+// active
+window-rule {
+  match is-active=true
+  opacity 1.0
 }
 
 // floating
@@ -67,4 +74,11 @@ window-rule {
   background-effect {
     blur true
   }
+}
+
+// vivaldi and picture-in-picture
+window-rule {
+  match app-id="^vivaldi"
+  match title="ピクチャーインピクチャー"
+  opacity 1.0
 }
