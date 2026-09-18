@@ -30,6 +30,7 @@
     ../../modules/system/tools/ffmpeg.nix
     ../../modules/system/tools/lan-mouse.nix
     ../../modules/system/tools/logitech.nix
+    ../../modules/system/tools/opentabletdriver.nix
     ../../modules/system/tools/piper.nix
     ../../modules/system/tools/qpwgraph.nix
     ../../modules/system/window-manager/niri
