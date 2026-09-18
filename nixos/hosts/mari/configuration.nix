@@ -18,6 +18,7 @@
     ../../modules/system/gaming/bottles.nix
     ../../modules/system/gaming/dosbox.nix
     ../../modules/system/gaming/wine.nix
+    ../../modules/system/streaming/moonlight.nix
     ../../modules/system/tools/ffmpeg.nix
     ../../modules/system/tools/lan-mouse.nix
     ../../modules/system/tools/piper.nix
