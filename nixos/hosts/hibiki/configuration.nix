@@ -22,6 +22,7 @@
     ../../modules/system/gaming/steam.nix
     ../../modules/system/gaming/tools.nix
     ../../modules/system/gaming/wine.nix
+    ../../modules/system/streaming/localsend.nix
     ../../modules/system/streaming/sunshine.nix
     ../../modules/system/tools/ffmpeg.nix
     ../../modules/system/tools/lan-mouse.nix
