@@ -20,9 +20,13 @@ in
     ../../modules/user/cli/nix-tools.nix
     ../../modules/user/cursor/eku
     ../../modules/user/editor/neovim
+    ../../modules/user/editor/audacity.nix
+    ../../modules/user/editor/freecad.nix
     ../../modules/user/editor/gimp.nix
+    ../../modules/user/editor/handbrake.nix
     ../../modules/user/editor/kid3.nix
     ../../modules/user/editor/krita.nix
+    ../../modules/user/editor/libreoffice.nix
     ../../modules/user/editor/losslesscut.nix
     ../../modules/user/file-manager/dolphin
     (import ../../modules/user/file-manager/yazi { })
