@@ -21,6 +21,7 @@
     ../../modules/system/gaming/lutris.nix
     ../../modules/system/gaming/steam.nix
     ../../modules/system/gaming/tools.nix
+    ../../modules/system/gaming/vr.nix
     ../../modules/system/gaming/wine.nix
     ../../modules/system/streaming/localsend.nix
     ../../modules/system/streaming/sunshine.nix

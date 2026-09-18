@@ -22,6 +22,9 @@
       url = "github:Benexl/yt-x";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    wivrn = {
+      url = "github:WiVRn/WiVRn";
+    };
   };
 
   outputs =
