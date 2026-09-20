@@ -36,6 +36,7 @@ in
     ../../modules/user/notification/swaync
     ../../modules/user/notification/libnotify.nix
     ../../modules/user/obs-studio
+    ../../modules/user/search/fsearch.nix
     ../../modules/user/shell/fish
     ../../modules/user/sns/vesktop
     ../../modules/user/sns/discord.nix
