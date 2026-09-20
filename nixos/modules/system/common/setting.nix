@@ -1,6 +1,7 @@
 {
   programs.nix-ld.enable = true; # Run unpatched dynamic binaries.
   programs.dconf.enable = true;
+  programs.appimage.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
