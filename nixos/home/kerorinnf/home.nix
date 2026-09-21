@@ -32,6 +32,7 @@ in
     (import ../../modules/user/file-manager/yazi { })
     ../../modules/user/monitoring/bottom
     ../../modules/user/monitoring/btop
+    ../../modules/user/monitoring/mission-center.nix
     ../../modules/user/noctalia
     ../../modules/user/notification/swaync
     ../../modules/user/notification/libnotify.nix
