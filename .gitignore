@@ -33,6 +33,7 @@ default/.config/fcitx5/conf/cached_layouts
 !/default/.config/gtk-4.0/**
 !/default/.config/hypr/
 !/default/.config/hypr/**
+default/.config/hypr/colors-hyprlock.conf
 !/default/.config/inim/
 !/default/.config/inim/inim.ini
 !/default/.config/kdeglobals
