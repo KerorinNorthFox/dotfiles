@@ -39,8 +39,8 @@ default/.config/hypr/colors-hyprlock.conf
 !/default/.config/kdeglobals
 !/default/.config/lazygit/
 !/default/.config/lazygit/config.yml
-!/defaut/.config/matugen/
-!/defaut/.config/matugen/**
+!/default/.config/matugen/
+!/default/.config/matugen/**
 !/default/.config/mimeapps.list
 !/default/.config/moe/
 !/default/.config/moe/**
