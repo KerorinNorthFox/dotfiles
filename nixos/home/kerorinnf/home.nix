@@ -12,6 +12,7 @@ let
 in
 {
   imports = [
+    ../../modules/user/chrome
     ../../modules/user/cli/lazygit
     ../../modules/user/cli/navi
     ../../modules/user/cli/tealdeer
