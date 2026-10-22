@@ -30,8 +30,8 @@ in
     ../../modules/user/editor/libreoffice.nix
     ../../modules/user/editor/losslesscut.nix
     ../../modules/user/file-manager/dolphin
-    (import ../../modules/user/file-manager/yazi { })
-    ../../modules/user/monitoring/bottom
+    (import ../../modules/user/file-manager/yazi { inherit username; })
+    (import ../../modules/user/monitoring/bottom { inherit username; })
     ../../modules/user/monitoring/btop
     ../../modules/user/monitoring/mission-center.nix
     ../../modules/user/noctalia
