@@ -31,6 +31,7 @@ in
     ../../modules/user/editor/losslesscut.nix
     ../../modules/user/file-manager/dolphin
     (import ../../modules/user/file-manager/yazi { inherit username; })
+    (import ../../modules/user/hyprlock { inherit username; })
     (import ../../modules/user/monitoring/bottom { inherit username; })
     (import ../../modules/user/monitoring/btop { inherit username; })
     ../../modules/user/monitoring/mission-center.nix
@@ -48,7 +49,6 @@ in
     ../../modules/user/viewer/music
     ../../modules/user/viewer/video
     ../../modules/user/vivaldi
-    ../../modules/user/hyprlock.nix
     ../../modules/user/hyprpicker.nix
   ];
 
