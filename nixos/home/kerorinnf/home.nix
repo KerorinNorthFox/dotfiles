@@ -32,7 +32,7 @@ in
     ../../modules/user/file-manager/dolphin
     (import ../../modules/user/file-manager/yazi { inherit username; })
     (import ../../modules/user/monitoring/bottom { inherit username; })
-    ../../modules/user/monitoring/btop
+    (import ../../modules/user/monitoring/btop { inherit username; })
     ../../modules/user/monitoring/mission-center.nix
     ../../modules/user/noctalia
     ../../modules/user/notification/swaync
