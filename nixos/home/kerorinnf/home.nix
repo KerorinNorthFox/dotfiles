@@ -13,7 +13,7 @@ in
 {
   imports = [
     ../../modules/user/chrome
-    ../../modules/user/cli/lazygit
+    (import ../../modules/user/cli/lazygit { inherit username; })
     ../../modules/user/cli/navi
     ../../modules/user/cli/tealdeer
     ../../modules/user/cli/ani-cli.nix
