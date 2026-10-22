@@ -42,7 +42,7 @@ in
     ../../modules/user/shell/fish
     ../../modules/user/sns/vesktop
     ../../modules/user/sns/discord.nix
-    ../../modules/user/terminal/foot
+    (import ../../modules/user/terminal/foot { inherit username; })
     ../../modules/user/terminal/zellij
     ../../modules/user/viewer/image
     ../../modules/user/viewer/music
