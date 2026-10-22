@@ -17,10 +17,6 @@
 !/ubuntu/install.txt
 
 !/default/.config/
-!/default/.config/bottom/
-!/default/.config/bottom/**
-!/default/.config/btop/
-!/default/.config/btop/**
 !/default/.config/dolphinrc
 !/default/.config/fcitx5/
 !/default/.config/fcitx5/**
