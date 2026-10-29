@@ -1,6 +1,0 @@
-[widget.audio_visualizer]
-bands = 32
-mirrored = false
-centered = false
-show_when_idle = true
-color_2 = "#fefefe"

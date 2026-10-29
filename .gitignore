@@ -37,8 +37,6 @@ default/.config/fcitx5/conf/cached_layouts
 !/default/.config/moe/**
 !/default/.config/niri-setting/
 !/default/.config/niri-setting/**
-!/default/.config/noctalia/
-!/default/.config/noctalia/**
 !/default/.config/nvim/
 !/default/.config/nvim/**
 !/default/.config/nvim_old_setting/

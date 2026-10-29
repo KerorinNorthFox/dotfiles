@@ -1,9 +1,0 @@
-[plugins]
-enabled = [
-  "noctalia/kaomoji",
-  "noctalia/wallhaven",
-  "blackbartblues/audio-switcher",
-]
-
-[plugin_settings."noctalia/wallhaven"]
-download_dir = "~/Wallpapers/wallhaven"
