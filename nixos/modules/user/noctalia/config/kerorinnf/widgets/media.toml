@@ -1,0 +1,9 @@
+[widget.media]
+art_size = 24
+title_scroll = "on_hover"
+
+[widget.media.actions]
+scroll_right = "next"
+scroll_left = "previous"
+scroll_up = "volume-up"
+scroll_down = "volume-down"

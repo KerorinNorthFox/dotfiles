@@ -35,7 +35,7 @@ in
     (import ../../modules/user/monitoring/bottom { inherit username; })
     (import ../../modules/user/monitoring/btop { inherit username; })
     ../../modules/user/monitoring/mission-center.nix
-    ../../modules/user/noctalia
+    (import ../../modules/user/noctalia { inherit username; })
     ../../modules/user/notification/swaync
     ../../modules/user/notification/libnotify.nix
     ../../modules/user/obs-studio

@@ -1,0 +1,6 @@
+[widget.swaync]
+type = "custom_button"
+glyph = "bell"
+
+[widget.swaync.actions]
+left = "exec swaync-client -t"
