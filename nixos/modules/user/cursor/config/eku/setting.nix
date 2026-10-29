@@ -1,7 +1,7 @@
 {
   home = {
     file = {
-      ".local/share/icons/Eku".source = ../../../../assets/cursors/Eku;
+      ".local/share/icons/Eku".source = ../../../../../assets/cursors/Eku;
     };
 
     sessionVariables = {

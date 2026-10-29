@@ -19,7 +19,7 @@ in
     ../../modules/user/cli/ani-cli.nix
     ../../modules/user/cli
     ../../modules/user/cli/nix-tools.nix
-    ../../modules/user/cursor/eku
+    (import ../../modules/user/cursor { name = "eku"; })
     ../../modules/user/editor/neovim
     ../../modules/user/editor/audacity.nix
     ../../modules/user/editor/freecad.nix
